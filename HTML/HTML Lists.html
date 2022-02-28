@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML 목록</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+    <style>
+      ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: orange;
+}
+</style>
+
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto;">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px;">
+        <div>
+          <div id="main" style="width:auto;">
+            <h1>HTML 목록(<span class="color_h1">Lists)</span></h1>
+            <div class="chapter">
+                             <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Tables.html">«
+                    Previous</a> <a class="w3-right w3-btn" href="HTML%20CSS.html">Next
+                    Chapter »</a> </div>
+            </div>
+            <br>
+            <div class="w3-example">
+              <h3>Example of an unordered list and an ordered list in HTML:</h3>
+              <div class="w3-padding w3-white">
+                <div class="w3-row">
+                  <div class="w3col w3-half">
+                    <h3>Unordered List:</h3>
+                    <ul>
+                      <li>Item</li>
+                      <li>Item</li>
+                      <li>Item</li>
+                      <li>Item</li>
+                    </ul>
+                  </div>
+                  <div class="w3col w3-half">
+                    <h3>Ordered List:</h3>
+                    <ol>
+                      <li>First item</li>
+                      <li>Second item</li>
+                      <li>Third item</li>
+                      <li>Fourth item</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <br>
+            </div>
+            <hr>
+            <h2>순서없는(Unordered) HTML Lists</h2>
+            <p>순서없는 목록(unordered list)는 <strong>&lt;ul&gt;</strong> 태그로 시작한다. 각
+              항목은&nbsp;<strong>&lt;li&gt;</strong> 태그로 시작한다.</p>
+            <p>목록 항목들은 작은 검은 점(bullet:small black circles)으로 표시된다. .</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ul</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;
+                <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp;
+                <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ul</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <p>
+                <a class="w3-btn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered"
+
+                  target="_blank">Try it Yourself »</a>
+              </p>
+            </div>
+            <hr>
+            <h2>순서없는HTML Lists - Style 속성</h2>
+            <p>마커의 스타일을 정의 하는데,&nbsp; <strong>style</strong> 속성을 <strong>unordered
+                list</strong> 에 추가할 수 있다.:</p>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th>Style</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>list-style-type:disc</td>
+                  <td>The list items will be marked with bullets (default)</td>
+                </tr>
+                <tr>
+                  <td>list-style-type:circle</td>
+                  <td>The list items will be marked with circles</td>
+                </tr>
+                <tr>
+                  <td>list-style-type:square</td>
+                  <td>The list items will be marked with squares</td>
+                </tr>
+                <tr>
+                  <td>list-style-type:none</td>
+                  <td>The list items will not be marked</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="w3-example">
+              <h3>Disc:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ul</span>
+                <span class="highATT">style=</span><span class="highVAL">"list-style-type:disc"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ul</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_disc"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <div class="w3-example">
+              <h3>Circle:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ul</span>
+                <span class="highATT">style=</span><span class="highVAL">"list-style-type:circle"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ul</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_circle"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <div class="w3-example">
+              <h3>Square:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ul</span>
+                <span class="highATT">style=</span><span class="highVAL">"list-style-type:square"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ul</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_square"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <div class="w3-example">
+              <h3>None:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ul</span>
+                <span class="highATT">style=</span><span class="highVAL">"list-style-type:none"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ul</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp;&lt;ul style="list-style-type:disc"&gt; 대신에, type 속성
+                    &lt;ul type="disc"&gt;도 작동한다.  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>순서있는(Ordered) HTML Lists</h2>
+            <p>순서있는 목록은 <strong>&lt;ol&gt;</strong> 태그로 시작하며, 각 항목은 <strong>&lt;li&gt;</strong>
+              태그로 시작한다.</p>
+            <p>목록 항목들은 숫자로 표시된다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ol</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;
+                <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp;
+                <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ol</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <hr>
+            <h2>순서있는HTML Lists - Type 속성</h2>
+            <p>마커의 타입을 정의하기 위해서<strong> type</strong> 속성을 순서있는 목록(<strong>ordered
+                list)</strong>에 추가 할 수 있다:</p>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>type="1"</td>
+                  <td>The list items will be numbered with numbers (default)</td>
+                </tr>
+                <tr>
+                  <td>type="A"</td>
+                  <td>The list items will be numbered with uppercase letters</td>
+                </tr>
+                <tr>
+                  <td>type="a"</td>
+                  <td>The list items will be numbered with lowercase letters</td>
+                </tr>
+                <tr>
+                  <td>type="I"</td>
+                  <td>The list items will be numbered with uppercase roman
+                    numbers</td>
+                </tr>
+                <tr>
+                  <td>type="i"</td>
+                  <td>The list items will be numbered with lowercase roman
+                    numbers</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="w3-example">
+              <h3>Numbers:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ol</span>
+                <span class="highATT">type=</span><span class="highVAL">"1"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ol</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_numbers"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <div class="w3-example">
+              <h3>Uppercase Letters:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ol</span>
+                <span class="highATT">type=</span><span class="highVAL">"A"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ol</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_ucase"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <div class="w3-example">
+              <h3>Lowercase Letters:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ol</span>
+                <span class="highATT">type=</span><span class="highVAL">"a"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ol</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_lcase"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <div class="w3-example">
+              <h3>Uppercase Roman Numbers:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ol</span>
+                <span class="highATT">type=</span><span class="highVAL">"I"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ol</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_roman_ucase"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <div class="w3-example">
+              <h3>Lowercase Roman Numbers:</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ol</span>
+                <span class="highATT">type=</span><span class="highVAL">"i"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ol</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered_roman_lcase"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <hr>
+            <h2>HTML 설명(Description) Lists</h2>
+            <p>설명 목록(description list)은 용어와 용어에 대한 설명에 사용하는 목록이다.</p>
+            <p><strong>&lt;dl&gt;</strong> 태그는 설명목록을 정의한다.</p>
+            <p><strong>&lt;dt&gt;</strong> 태그는 용어(term)를 정의하며, <strong>&lt;dd&gt;</strong>
+              태그는 설명(description)을 정의한다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">dl</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;
+                <span class="highLT">&lt;</span><span class="highELE">dt</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/dt</span><span class="highGT">&gt;</span><br>
+                &nbsp;
+                <span class="highLT">&lt;</span><span class="highELE">dd</span><span
+
+                  class="highGT">&gt;</span>- black hot drink<span class="highLT">&lt;</span><span
+
+                  class="highELE">/dd</span><span class="highGT">&gt;</span><br>
+                &nbsp;
+                <span class="highLT">&lt;</span><span class="highELE">dt</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/dt</span><span class="highGT">&gt;</span><br>
+                &nbsp;
+                <span class="highLT">&lt;</span><span class="highELE">dd</span><span
+
+                  class="highGT">&gt;</span>- white cold drink<span class="highLT">&lt;</span><span
+
+                  class="highELE">/dd</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/dl</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_description"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <hr>
+            <h2>중첩된(Nested) HTML Lists</h2>
+            <p>목록은 중첩(nested - lists inside lists)될 수 있다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">ul</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Coffee<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Tea<br>
+                &nbsp; &nbsp; <span class="highLT">&lt;</span><span class="highELE">ul</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; &nbsp; <span class="highLT">&lt;</span><span
+
+                  class="highELE">li</span><span class="highGT">&gt;</span>Black
+                tea<span class="highLT">&lt;</span><span class="highELE">/li</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span
+
+                  class="highELE">li</span><span class="highGT">&gt;</span>Green
+                tea<span class="highLT">&lt;</span><span class="highELE">/li</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">/ul</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/li</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>Milk<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ul</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp;목록 항목은 새로운 목록과 이미지와 링크 등과 같은 다른 HTML 요소를 포함할 수 있다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>수평(Horizontal) Lists</h2>
+            <p>HTML 목록은 CSS로 다양한 방법으로 스타일 될 수 있다.</p>
+            <p>한가지 자주 사용되는 방법은 목록이 수평으로 표시되도록 스타일 하는 것이다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh">
+                <span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span>
+                <span class="highATT">html</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">style</span><span
+
+                  class="highGT">&gt;</span><br>
+                ul#menu li {<br>
+                &nbsp;&nbsp;&nbsp; display:inline;<br>
+                }<br>
+                <span class="highLT">&lt;</span><span class="highELE">/style</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">h2</span><span
+
+                  class="highGT">&gt;</span>Horizontal List<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h2</span><span class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">ul</span>
+                <span class="highATT">id=</span><span class="highVAL">"menu"</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>HTML<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>CSS<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>JavaScript<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">li</span><span
+
+                  class="highGT">&gt;</span>PHP<span class="highLT">&lt;</span><span
+
+                  class="highELE">/li</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/ul</span><span
+
+                  class="highGT">&gt;</span> <br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_horizontal"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <p>With a little extra style, you can make it look like a menu:</p>
+            <ul id="menu">
+              <li><a href="html tables.html">Tables</a></li>
+              <li><a href="html lists.html">Lists</a></li>
+              <li><a href="html block elements.html">Blocks</a></li>
+              <li><a href="html classes.html">Classes</a></li>
+            </ul>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh">
+                <span class="highELE">ul#menu </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  0;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">ul#menu li </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">display:</span><span class="highVAL">
+                  inline;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">ul#menu li a </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> black;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  white;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  10px 20px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-decoration:</span><span
+
+                  class="highVAL"> none;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-radius:</span><span
+
+                  class="highVAL"> 4px 4px 0 0;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">ul#menu li a:hover </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> orange;</span><br>
+                }
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu"
+
+                target="_blank">Try it Yourself »</a>
+            </div>
+            <hr>
+            <h2>Chapter Summary</h2>
+            <ul>
+              <li>Use the HTML <strong>&lt;ul&gt;</strong> element to define an
+                unordered list</li>
+              <li>Use the HTML <strong>style</strong> attribute to define the
+                bullet style</li>
+              <li>Use the HTML <strong>&lt;ol&gt;</strong> element to define an
+                ordered list</li>
+              <li>Use the HTML <strong>type</strong> attribute to define the
+                numbering type</li>
+              <li>Use the HTML <strong>&lt;li&gt;</strong> element to define a
+                list item</li>
+              <li>Use the HTML <strong>&lt;dl&gt;</strong> element to define a
+                description list</li>
+              <li>Use the HTML <strong>&lt;dt&gt;</strong> element to define
+                the description term</li>
+              <li>Use the HTML <strong>&lt;dd&gt;</strong> element to define
+                the description data </li>
+              <li>Lists can be nested inside lists</li>
+              <li>List items can contain other HTML elements </li>
+              <li>Use the CSS property <strong>display:inline</strong> to
+                display a list horizontally</li>
+            </ul>
+            <hr>
+            <h2>Test Yourself with Exercises!</h2>
+            <p>
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists1"
+
+                target="_blank">Exercise 1 »</a>&nbsp;
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists2"
+
+                target="_blank">Exercise 2 »</a>&nbsp;
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists3"
+
+                target="_blank">Exercise 3 »</a>&nbsp;
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists4"
+
+                target="_blank">Exercise 4 »</a>&nbsp;
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists5"
+
+                target="_blank">Exercise 5 »</a>&nbsp;
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists6"
+
+                target="_blank">Exercise 6 »</a>
+            </p>
+            <hr>
+            <h2>HTML List Tags</h2>
+            <table class="w3-table-all  notranslate">
+              <tbody>
+                <tr>
+                  <th>Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_ul.asp">&lt;ul&gt;</a></td>
+                  <td>순서없는 목록(unordered list) 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_ol.asp">&lt;ol&gt;</a></td>
+                  <td>순서있는 목록(ordered list) 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_li.asp">&lt;li&gt;</a></td>
+                  <td>목록 항목 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_dl.asp">&lt;dl&gt;</a></td>
+                  <td>설명 목록(description list) 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_dt.asp">&lt;dt&gt;</a></td>
+                  <td>설명 목록의 용어(term)를 정의 </td>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_dd.asp">&lt;dd&gt;</a></td>
+                  <td>설명 목록의 설명(description)을 정의</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div class="chapter">
+                             <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Tables.html">«
+                    Previous</a> <a class="w3-right w3-btn" href="HTML%20CSS.html">Next
+                    Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>

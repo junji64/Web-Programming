@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML head</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto;">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px;">
+        <div>
+          <div id="main" style="width:auto;">
+            <h1>HTML <span class="color_h1">&lt;head&gt;</span></h1>
+            <div class="chapter">
+                             <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Scripts.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Entities.html">Next
+                  Chapter »</a> </div>
+                          </div>
+            <hr>
+            <h2> HTML &lt;head&gt; <strong>요소</strong></h2>
+            <p>&lt;head&gt; 요소는 모든 헤드 요소를 담는 컨테이너다. &lt;head&gt; 내부의 요소들로는 스크립트와
+              브라우저에게 스타일 시트가 어디에 있는지를 알려주는 것, 메타정보제공 등이 올 수 있다.</p>
+            <p>다음 태그들이 head 섹션에 올 수 있습니다.: &lt;title&gt;, &lt;style&gt;,
+              &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt;, and
+              &lt;base&gt;.</p>
+            <hr>
+            <h2>The HTML &lt;title&gt;<strong>요소</strong></h2>
+            <p><strong>&lt;title&gt;</strong> 태그는 문서의 제목을 정의한다.</p>
+            <p><strong>&lt;title&gt; </strong>요소는 모든 HTML / XHTML 문서에서 요구됩니다.</p>
+            <p><strong>&lt;title&gt; </strong>요소:</p>
+            <ul>
+              <li><strong>브라우저 툴바의 제목</strong>을 정의</li>
+              <li><strong>즐겨 찾기</strong>에 추가 될 때 <strong>페이지 제목을 제공</strong>합니다</li>
+              <li>검색 엔진의<strong> 검색 결과</strong>에서 <strong>페이지의 제목</strong>을
+                표시합니다</li>
+            </ul>
+            <p>간단한 HTML 문서:</p>
+            <div class="code notranslate">
+              <div> &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;title&gt;Title of the document&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                <br>
+                &lt;body&gt;<br>
+                The content of the document......<br>
+                &lt;/body&gt;<br>
+                <br>
+                &lt;/html&gt; </div>
+            </div>
+            <br>
+            <p><a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_title">&lt;title&gt;
+                - Define a title for an HTML document</a><br>
+              Use the &lt;title&gt; tag to define a title for a document.</p>
+            <hr>
+            <h2> HTML &lt;base&gt; <strong>요소</strong></h2>
+            <p><strong>&lt;base&gt;</strong> 태그는 페이지의 모든 <strong>상대적인 URL</strong>에
+              대한 <strong>기본 URL/대상을 지정</strong>합니다 :</p>
+            <div class="code notranslate">
+              <div> &lt;head&gt;<br>
+                &lt;base href="http://www.w3schools.com/images/"
+                target="_blank"&gt;<br>
+                &lt;/head&gt; </div>
+            </div>
+            <br>
+            <p><a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_base">&lt;base&gt;
+                - Default URL and target for all links</a><br>
+              Use the &lt;base&gt; tag to specify a default URL and a default
+              target for all links on a page.</p>
+            <hr>
+            <h2> HTML &lt;link&gt; <strong>요소</strong></h2>
+            <p><strong>&lt;link&gt; </strong>태그는 현재 문서와 외부 자원 사이의 관계를 정의한다..</p>
+            <p><strong>&lt;link&gt; </strong>태그는 대부분 <strong>스타일 시트를 연결하는 데 사용</strong>됩
+              니다&nbsp;:</p>
+            <div class="code notranslate">
+              <div> &lt;head&gt;<br>
+                &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br>
+                &lt;/head&gt; </div>
+            </div>
+            <br>
+            <hr>
+            <h2> HTML &lt;style&gt;<strong> 요소</strong></h2>
+            <p><strong>&lt;style&gt;</strong> 태그는 HTML 문서에 대한 스타일 정보를 정의하는 데
+              사용됩니다.</p>
+            <p><strong>&lt;style&gt; </strong>요소 안에 HTML 요소들이 브라우저에 렌더링되는 방법들을
+              지정합니다:</p>
+            <div class="code notranslate">
+              <div> &lt;head&gt;<br>
+                &lt;style type="text/css"&gt;<br>
+                body {background-color:yellow;}<br>
+                p {color:blue;}<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt; </div>
+            </div>
+            <br>
+            <hr>
+            <h2> HTML &lt;meta&gt;<strong> 요소</strong></h2>
+            <p>메타 데이터는 데이터에 관한 데이터 (정보)입니다.</p>
+            <p><strong>&lt;meta&gt;</strong> 태그는 HTML 문서에 대한 메타 데이터를
+              제공합니다.&nbsp; 메타데이타는 페이지에 표시되지는 않지만, 기계에 의해 분석되어진다.</p>
+            <p>메타 요소는 일반적으로 페이지의 설명, 키워드, 문서의 작성자, 마지막 수정 및 기타 메타 데이터를 지정하는 데
+              사용됩니다.</p>
+            <p>메타 데이터는 브라우저에서 (콘텐츠 또는 다시로드 페이지를 표시하는 방법), 검색 엔진에서 (키워드), 또는 다른 웹
+              서비스에서 사용할 수 있습니다.</p>
+            <p><strong>&lt;meta&gt; </strong>태그는 항상 <strong>&lt;head&gt; </strong>요
+              소 안에만 올 수있다</p>
+            <h2>&lt;meta&gt;<strong> 태그 - 사용의 예</strong></h2>
+            <p>검색 엔진에 키워드를 정의합니다:</p>
+            <div class="code notranslate">
+              <div>&lt;meta name="keywords" content="HTML, CSS, XML, XHTML,
+                JavaScript"&gt;</div>
+            </div>
+            <p>웹 페이지에 대한 설명을 정의합니다:</p>
+            <div class="code notranslate">
+              <div>&lt;meta name="description" content="Free Web tutorials on
+                HTML and CSS"&gt;</div>
+            </div>
+            <p>페이지의 작성자를 정의합니다&nbsp;:</p>
+            <div class="code notranslate">
+              <div>&lt;meta name="author" content="Hege Refsnes"&gt;</div>
+            </div>
+            <p><strong>문서를</strong> 30초 후 <strong>새로 고침</strong>:</p>
+            <div class="code notranslate">
+              <div>&lt;meta http-equiv="refresh" content="30"&gt;</div>
+            </div>
+            <br>
+            <p><a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_meta">&lt;meta&gt;
+                - Provide metadata for an HTML document</a><br>
+              Use &lt;meta&gt; elements to specify a description, keywords,
+              author, and character set of a document.</p>
+            <hr>
+            <h2>HTML &lt;script&gt; <strong>요소</strong></h2>
+            <p><strong>&lt;script&gt;</strong> 태그 JavaScript와 같은 클라이언트 측 스크립트를
+              정의하는 데 사용된다.</p>
+            <hr>
+            <h2>HTML <strong>헤드 요소</strong></h2>
+            <table class="reference notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_head.asp">&lt;head&gt;</a></td>
+                  <td>문서에 대한 정보를 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_title.asp">&lt;title&gt;</a></td>
+                  <td>문서의 제목을 정의합니다</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_base.asp">&lt;base&gt;</a></td>
+                  <td>페이지의 모든 링크에 대한 기본 주소 나 기본 대상을 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_link.asp">&lt;link&gt;</a></td>
+                  <td>문서 와 외부 자원 사이의 관계를 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_meta.asp">&lt;meta&gt;</a></td>
+                  <td>HTML 문서에 대한 메타 데이터를 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_script.asp">&lt;script&gt;</a></td>
+                  <td>클라이언트 측 스크립트를 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_style.asp">&lt;style&gt;</a></td>
+                  <td>문서의 스타일 정보를 정의</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div class="chapter">
+                             <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Scripts.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Entities.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title> HTML 링크</title>
+    <style>a.menu_html_intro{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,w3-examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto;">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px;">
+        <div>
+          <div id="main" style="width:auto;">
+            <h1>HTML <span class="color_h1"><strong>링크</strong>(Links)</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="html%20formatting.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Images.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <p class="intro">링크는 거의 모든 웹페이지에서 나타납니다. 링크는 사용자들이 클릭으로 한 페이지에서 다른
+              페이지로 이동하게 해줍니다.</p>
+            <hr>
+            <h2>HTML <strong>링크 -</strong><strong> 하이퍼링크</strong></h2>
+            <p>HTML 하이퍼링크 (or 링크)는 다른 문서로 이동하기 위해서 클릭할 수 있는 요소, 텍스트 또는 이미지입니다.</p>
+            <br>
+            <hr>
+            <h2>HTML <strong>링크 - 문법</strong></h2>
+            <p>HTML 에서 링크는 <strong>&lt;a&gt;</strong>태그로 정의된다:&nbsp;</p>
+            <div class="code notranslate">
+              <div class="w3-example">
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">a</span> <span class="highATT">href=</span><span
+
+                    class="highVAL">"<i>url</i>"</span><span class="highGT">&gt;</span><i>link
+                    text</i><span class="highLT">&lt;</span><span class="highELE">/a</span><span
+
+                    class="highGT">&gt;</span> </div>
+              </div>
+              <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">a</span> <span class="highATT">href=</span><span
+
+                    class="highVAL">"https://www.w3schools.com/html/"</span><span
+
+                    class="highGT">&gt;</span>Visit our HTML tutorial<span class="highLT">&lt;</span><span
+
+                    class="highELE">/a</span><span class="highGT">&gt;</span> </div>
+                <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools"
+
+                  target="_blank">Try it Yourself »</a> </div>
+              href 속성은 링크의 목적지 주소( https://www.w3schools.com/html/ )를 지정한다.<br>
+              link text 는 보이는 부분입니다.<br>
+              link text 에 클릭함으로써 지정된 주소로 이동 된다.<br>
+              <b>Tip:</b>&nbsp; "link text" 는 텍스트여야만 할 필요는 없으며, 이미지나 또 다른 HTML
+              요소가 될 수 있다.<br>
+              <hr>
+              <h2><span style="font-weight: bold;"><span style="font-weight: normal;">Local
+                    Links</span></span></h2>
+              <p>위의 예는 <strong>절대적(absolute) URL </strong>(웹주소 전체)을 사용하고있다.</p>
+              <p>지역링크(같은 웹사이트로의 링크)는 <strong>상대적(relative) URL </strong>(http://www...
+                없이)을 사용한다.</p>
+              <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">a</span> <span class="highATT">href=</span><span
+
+                    class="highVAL">"html_images.asp"</span><span class="highGT">&gt;</span>HTML
+                  Images<span class="highLT">&lt;</span><span class="highELE">/a</span><span
+
+                    class="highGT">&gt;</span> </div>
+                <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links"
+
+                  target="_blank">Try it Yourself »</a> </div>
+              <hr>
+              <h2><span style="font-weight: bold;"><span style="font-weight: normal;">HTML
+                    Links - Colors and Icons<br>
+                  </span></span></h2>
+              <p>사용자가 웹페이지에서 링크 위로 커서를 이동하면, 보통 두 가지 일이 일어난다 : </p>
+              <ul>
+                <li>마우스 화살표는 <strong>작은 손</strong>으로 바뀝니다. </li>
+                <li>링크 요소의 <strong>색이 바뀐다</strong>.</li>
+              </ul>
+              <p>기본적으로,&nbsp; 모든 브라우저에서 이 는 다음과 같이 나타납니다:</p>
+              <ul>
+                <li>방문한 적 없는 링크는 <strong>밑줄</strong>과 <strong>파란색</strong></li>
+                <li>방문한 적 있는 링크는 <strong>밑줄</strong>과 <strong>보라색</strong></li>
+                <li>활성화된 링크는 <strong>밑줄</strong>과 <strong>빨간색</strong></li>
+              </ul>
+              <p>이러한 기본 값을, style 을 사용하여 변경할 수 있다.</p>
+              <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate cssHigh"> <span class="highELE">&lt;style&gt;<br>
+                    a:link&nbsp;&nbsp;&nbsp; </span>{<span class="highATT">color:</span><span
+
+                    class="highVAL">green;</span> <span class="highATT">background-color:</span><span
+
+                    class="highVAL">transparent;</span> <span class="highATT">text-decoration:</span><span
+
+                    class="highVAL">none</span>}<br>
+                  <span class="highELE">a:visited </span>{<span class="highATT">color:</span><span
+
+                    class="highVAL">pink;</span> <span class="highATT">background-color:</span><span
+
+                    class="highVAL">transparent;</span> <span class="highATT">text-decoration:</span><span
+
+                    class="highVAL">none</span>}<br>
+                  <span class="highELE">a:hover&nbsp;&nbsp; </span>{<span class="highATT">color:</span><span
+
+                    class="highVAL">red;</span> <span class="highATT">background-color:</span><span
+
+                    class="highVAL">transparent;</span> <span class="highATT">text-decoration:</span><span
+
+                    class="highVAL">underline</span>}<br>
+                  <span class="highELE">a:active&nbsp; </span>{<span class="highATT">color:</span><span
+
+                    class="highVAL">yellow;</span> <span class="highATT">background-color:</span><span
+
+                    class="highVAL">transparent;</span> <span class="highATT">text-decoration:</span><span
+
+                    class="highVAL">underline</span>}<br>
+                  <span class="highELE">&lt;/style&gt; </span></div>
+                <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_colors"
+
+                  target="_blank">Try it Yourself »</a> </div>
+              <hr>
+              <h2>HTML <strong>링크</strong> - target <strong>속성</strong></h2>
+              <p><strong>target 속성</strong>은 링크된 문서가 열릴 곳을 지정한다. </p>
+              <p>아래의 예는 <strong>새 브라우저 창 </strong>또는 <strong>새 탭</strong>에
+                링크된 문서를 엽니다:</p>
+              <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">a</span> <span class="highATT">href=</span><span
+
+                    class="highVAL">"http://www.w3schools.com/"</span> <span class="highATT">target=</span><span
+
+                    class="highVAL">"_blank"</span><span class="highGT">&gt;</span>Visit
+                  W3Schools!<span class="highLT">&lt;</span><span class="highELE">/a</span><span
+
+                    class="highGT">&gt;</span> </div>
+                <a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target"
+
+                  class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+              <table class="w3-table-all notranslate" style="box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; margin-bottom: 12px; width: 722.400024414063px; max-width: 100%; border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.1428565979004px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+                <tbody style="box-sizing: border-box;">
+                  <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                    <th style="box-sizing: border-box; padding: 8px; text-align: left; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); width: 144px;">Target
+                      Value</th>
+                    <th style="box-sizing: border-box; padding: 8px; text-align: left; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Description</th>
+                  </tr>
+                  <tr style="box-sizing: border-box; background-color: rgb(245, 245, 245);">
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">_blank</td>
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">새
+                      브라우저 창 또는 새 탭에 링크된 문서를 엽니다</td>
+                  </tr>
+                  <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">_self</td>
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">클릭된 곳 과 같은 프레임에 링크된 문서를 엽니다.&nbsp; (<strong>this is default</strong>)</td>
+                  </tr>
+                  <tr style="box-sizing: border-box; background-color: rgb(245, 245, 245);">
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">_parent</td>
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">부모 프레임(parent frame)에 링크된 문서를 엽니다.</td>
+                  </tr>
+                  <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">_top</td>
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">윈도우의 전체에 링크된 문서를 엽니다.</td>
+                  </tr>
+                  <tr style="box-sizing: border-box; background-color: rgb(245, 245, 245);">
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><i
+
+                        style="box-sizing: border-box;">framename</i></td>
+                    <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">명 명된 프래임에 링크된 문서를 엽니다.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.1428565979004px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">웹
+                페이지가 프레임에 닫혀있는 경우에는, 프레임을 깨고 나오게 하기위해서 target="_top" 을 사용할 수
+                있다.:</p>
+              <p>아래의 예는 <strong>새 브라우저 창 </strong>또는 <strong>새 탭</strong>에
+                링크된 문서를 엽니다:</p>
+              <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">a</span> <span class="highATT">href=</span><span
+
+                    class="highVAL">"http://www.w3schools.com/html/"</span> <span
+
+                    class="highATT">target=</span><span class="highVAL">"_top"</span><span
+
+                    class="highGT">&gt;</span>HTML5 tutorial!<span class="highLT">&lt;</span><span
+
+                    class="highELE">/a</span><span class="highGT">&gt;</span> </div>
+                <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target_top"
+
+                  target="_blank">Try it Yourself »</a> </div>
+              <hr>
+              <h2>HTML <strong>링크 - 링크로서의 Image<br>
+                </strong></h2>
+              <p>이미지가 링크로 자주 사용된다. : </p>
+              <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">a</span> <span class="highATT">href=</span><span
+
+                    class="highVAL">"default.asp"</span><span class="highGT">&gt;</span><br>
+                  &nbsp; <span class="highLT">&lt;</span><span class="highELE">img</span>
+                  <span class="highATT">src=</span><span class="highVAL">"smiley.gif"</span>
+                  <span class="highATT">alt=</span><span class="highVAL">"HTML
+                    tutorial"</span> <span class="highATT">style=</span><span class="highVAL">"width:42px;height:42px;border:0"</span><span
+
+                    class="highGT">&gt;</span><br>
+                  <span class="highLT">&lt;</span><span class="highELE">/a</span><span
+
+                    class="highGT">&gt;</span> </div>
+                <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image"
+
+                  target="_blank">Try it Yourself »</a> </div>
+              <hr>
+              <h2>HTML <strong>링크</strong> - id <strong>속성</strong></h2>
+              <p><strong>id 속성</strong>은 HTML 문서 안에 <strong>즐겨찾기</strong>(bookmark)
+                를 작성하는데 사용될 수 있다.</p>
+              <p><b>Tip:</b> 즐겨찾기(bookmark)는 어떤 특별한 방법으로 표시되지 않으며, 사용자에게 보이지
+                않는다.</p>
+              <h2>Example</h2>
+              <p>&nbsp;id 속성으로 북마크를 생성한다:</p>
+              <div class="w3-example">
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">h2</span> <span class="highATT">id=</span><span
+
+                    class="highVAL">"tips"</span><span class="highGT">&gt;</span>Useful
+                  Tips Section<span class="highLT">&lt;</span><span class="highELE">/h2</span><span
+
+                    class="highGT">&gt;</span></div>
+              </div>
+              <p>그리고, <strong>같은 페이지</strong>에, 북마크 "Useful Tips Section" 에 대한
+                링크를 만든다. :</p>
+              <div class="w3-example">
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">a</span> <span class="highATT">href=</span><span
+
+                    class="highVAL">"#tips"</span><span class="highGT">&gt;</span>Visit
+                  the Useful Tips Section<span class="highLT">&lt;</span><span class="highELE">/a</span><span
+
+                    class="highGT">&gt;</span> </div>
+              </div>
+              <p>또는, <strong>다른 페이지</strong>에서 북마크 "Useful Tips Section"에 대한
+                링크를 만든다:</p>
+              <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                    class="highELE">a</span> <span class="highATT">href=</span><span
+
+                    class="highVAL">"html_tips.html#tips"</span><span class="highGT">&gt;</span>Visit
+                  the Useful Tips Section<span class="highLT">&lt;</span><span class="highELE">/a</span><span
+
+                    class="highGT">&gt;</span> </div>
+                <a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_bookmark"
+
+                  class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+              <hr>
+              <h2>Basic Notes - 유용한 Tips</h2>
+              <p><b>Note:</b> 하위폴더를 참조할 때 항상 슬래시를 추가하시오.&nbsp; 이처럼 링크하면:
+                href="https://www.w3schools.com/html", 서버에 두 가지 요청을 하는 것으로, 서버는
+                우선 주소에 슬래시를 추가한 다음에 새로운 요청을 생성하게 된다:
+                href="https://www.w3schools.com/html/".</p>
+              <hr>
+              <div class="tryit_ex">
+                <h2>Test Yourself with Exercises !</h2>
+              </div>
+              <p> <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_links1"
+
+                  target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_links2"
+
+                  target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_links3"
+
+                  target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_links4"
+
+                  target="_blank">Exercise 4 »</a>&nbsp; <a class="w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_links5"
+
+                  target="_blank">Exercise 5 »</a> </p>
+              <hr>
+              <h2>HTML 링크 태그 </h2>
+              <table class="w3-table-all notranslate">
+                <tbody>
+                  <tr>
+                    <th style="width:30%">태그</th>
+                    <th>설명</th>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.w3schools.com/tags/tag_a.asp">&lt;a&gt;</a></td>
+                    <td>하이퍼링크를 정의</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <br>
+              <div class="chapter">
+                <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="html%20formatting.html">«
+                    Previous</a> <a class="w3-right w3-btn" href="HTML%20Images.html">Next
+                    Chapter »</a> </div>
+              </div>
+              <hr> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

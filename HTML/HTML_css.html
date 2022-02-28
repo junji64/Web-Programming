@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Styles</title>
+    <style>a.menu_html_css{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3855518-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> <script>
+<!--
+function searchfield_focus(obj)
+{
+obj.style.color=""
+obj.style.fontStyle=""
+if (obj.value=="Search w3schools.com")
+	{obj.value=""}
+}
+var addr=document.location.href;
+function displayError()
+{
+document.getElementById("err_url").value=addr;
+document.getElementById("err_form").style.display="block";
+document.getElementById("err_desc").focus();
+hideSent();
+}
+function hideError()
+{
+document.getElementById("err_form").style.display="none";
+}
+function hideSent()
+{
+document.getElementById("err_sent").style.display="none";
+}
+function sendErr()
+{
+var xmlhttp;
+var err_url=document.getElementById("err_url").value;
+var err_email=document.getElementById("err_email").value;
+var err_desc=document.getElementById("err_desc").value;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("POST","/err_sup.asp",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+hideError();
+document.getElementById("err_sent").style.display="block";
+}
+//-->
+</script> <script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script> <script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16833175/BottomMediumRectangle', [300, 250], 'div-gpt-ad-1383210480969-0').addService(googletag.pubads());
+googletag.defineSlot('/16833175/LargePS', [[723, 280], [723, 400]], 'div-gpt-ad-1383210480969-1').addService(googletag.pubads());
+googletag.defineSlot('/16833175/MainLeaderboard', [728, 90], 'div-gpt-ad-1383210480969-2').addService(googletag.pubads());
+googletag.defineSlot('/16833175/SmallPS', [723, 170], 'div-gpt-ad-1383210480969-3').addService(googletag.pubads());
+googletag.defineSlot('/16833175/WideSkyScraper', [160, 600], 'div-gpt-ad-1383210480969-4').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","html");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script> <script>
+  (function() {
+    var cx = '012971019331610648934:m2tou3_miwy';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script> <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto;">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px;">
+        <div>
+          <div id="main" style="width:auto;">
+            <h1>HTML <span class="color_h1">스타일(Styles) - CSS</span></h1>
+            <div class="chapter">
+              <div class="prev"><a class="chapter" href="html%20lists.html">«
+                  Previous</a></div>
+              <div class="next"><a class="chapter" href="HTML%20Formatting.html">Next
+                  Chapter »</a></div>
+            </div>
+            <hr>
+            <p class="intro">HTML 요소를 스타일링 하는데 CSS (Cascading Style Sheets)가
+              사용된다.</p>
+            <div style="position:relative;">
+              <div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF"></div>
+              <div style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:200px;background-color:#8AC007"></div>
+              <div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+                <h1>Look! Styles and colors</h1>
+                <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:10px;">Manipulate
+                  Text</div>
+                <div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:20px;">Colors,
+                  <span style="background-color:#B4009E;color:#ffffff;">&nbsp;Boxes</span></div>
+                <div style="color:#000000;letter-spacing:-1px;font-size:15px;position:relative;top:15px;">and
+                  more...</div>
+              </div>
+            </div>
+            <p><a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles">Try
+                it yourself</a></p>
+            <hr>
+            <h2>CSS로 HTML을 <strong>스타일링하기</strong></h2>
+            <p>CSS는 HTML 요소를 스타일링하는 더 나은 방법을 제공하기 위해서 HTML 4에서 도입되었다.</p>
+            <p>CSS는 다음과 같은 방법들을 HTML에 제공한다:</p>
+            <ul>
+              <li><strong>인라인(Inline)</strong> - HTML 요소 안의 style<strong> 속성</strong>에
+                서</li>
+              <li><strong>내부</strong> - &lt;head&gt; 섹션 안의 &lt;style&gt;<strong>
+                  요소</strong>를 사용하여 </li>
+              <li><strong>외부</strong> - 외부의 CSS<strong> 파일</strong>을 사용하여</li>
+            </ul>
+            <p>HTML에 CSS를 추가하는 선호되는 방법은, <strong>외부</strong>의 별도 CSS 파일에 CSS
+              문법을 넣는 것이다.</p>
+            <p>하지만, 이 HTML 튜토리얼에서는 style 속성을 사용한 CSS를 소개한다. 이는 예를 단순화 하기 위한 것이며,
+              쉽게 코드를 편집하여 직접 실험을 쉽게 할 수 있게 해준다. </p>
+            <p>CSS에 대한 모든 것은 여기에서 배운다 <a href="http://www.w3schools.com/css/default.asp">==&gt;
+                CSS Tutorial</a>.</p>
+            <hr>
+            <h2><strong>인라인</strong>(Inline) <strong>스타일</strong></h2>
+            <p> 독특한 스타일을 요소의 단 한번의 경우에만 적용 할 경우, 인라인 스타일이 사용될 수 있다.</p>
+            <p> 인라인 스타일을 사용하려면, 해당 태그의 style 속성을 사용합니다. style 속성은 어떤 CSS 속성도 포함
+              할 수 있습니다. 아래의 예는 텍스트 색상 및 단락의 왼쪽 여백을 변경하는 방법을 보여줍니다:</p>
+            <div class="code notranslate">
+              <div> &lt;p style="color:blue;margin-left:20px;"&gt;This is a
+                paragraph.&lt;/p&gt; </div>
+            </div>
+            <br>
+            <hr>
+            <h2>HTML <strong>스타일</strong> Example - <strong>배경 색</strong></h2>
+            <p><strong>background-color</strong> 성질(property)은 요소의 배경색을 정의한다:</p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate"> &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                <br>
+                &lt;body style="background-color:yellow;"&gt;<br>
+                &lt;h2 style="background-color:red;"&gt;This is a
+                heading&lt;/h2&gt;<br>
+                &lt;p style="background-color:green;"&gt;This is a
+                paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                <br>
+                &lt;/html&gt;</div>
+              <br>
+              <a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_bodybgstyle"
+                class="tryitbtn">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>HTML Style Example - <strong>폰트, 색, 크기</strong></h2>
+            <p><strong>font-family, color</strong>, 와 <strong>font-size 성질</strong>은&nbsp;
+              요소에 있는 텍스트의 폰트, 색과 크기를 정의한다:</p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate"> &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                <br>
+                &lt;body&gt;<br>
+                &lt;h1 style="font-family:verdana;"&gt;A heading&lt;/h1&gt;<br>
+                &lt;p style="font-family:arial;color:red;font-size:20px;"&gt;A
+                paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                <br>
+                &lt;/html&gt;</div>
+              <br>
+              <a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_newfont"
+                class="tryitbtn">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>HTML Style Example - <strong>텍스트 정렬</strong></h2>
+            <p><strong>text-align 성질</strong>은 요소의 텍스트의 수평 정렬을 지정한다.:</p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate"> &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                <br>
+                &lt;body&gt;<br>
+                &lt;h1 style="text-align:center;"&gt;Center-aligned
+                heading&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                <br>
+                &lt;/html&gt;</div>
+              <br>
+              <a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_headeralign"
+                class="tryitbtn">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2><strong>내부 스타일 시트 </strong></h2>
+            <p>단 <strong>하나의 문서에 고유한 스타일</strong>을 갖게 하려면 <strong>내부 스타일 시트</strong>를
+              사용할 수 있다. 내부 스타일 시트는 HTML 페이지의<strong> &lt;head&gt;</strong> 섹션안의
+              다음과 같이 <strong>&lt;style&gt;</strong> 태그를 사용하여 정의된다.:</p>
+            <div class="code notranslate">
+              <div> &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                body {background-color:yellow;}<br>
+                p {color:blue;}<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt; </div>
+            </div>
+            <br>
+            <p><a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_style">Using
+                styles in HTML</a><br>
+              How to add style information inside the &lt;head&gt; section.</p>
+            <hr>
+            <h2><strong>외부 스타일 시트</strong></h2>
+            <p>스타일을 많은 페이지에 적용할 때 이상적이다. <strong>외부 스타일 시트</strong>를 사용하면 하나의
+              파일을 변경하여 전체 웹 사이트의 모양을 변경할 수 있습니다.각 페이지는&nbsp;<strong>&lt;link&gt;</strong>
+              태그를 사용하여 스타일 시트에 연결해야 합니다.&nbsp;<strong> &lt;link&gt; </strong>태그
+              는 <strong>&lt;head&gt; </strong>섹션 안에 온다.:</p>
+            <div class="code notranslate">
+              <div> &lt;head&gt;<br>
+                &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br>
+                &lt;/head&gt; </div>
+            </div>
+            <br>
+            <p><a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_link">Link
+                to an external style sheet</a><br>
+              How to use the &lt;link&gt; tag to link to an external style
+              sheet.</p>
+            <hr>
+            <div class="tryit_ex"> <img src="/images/tryitimg.gif" style="width:40px;height:46px"
+                alt="Examples">
+              <h2>Try it Yourself - Examples</h2>
+            </div>
+            <p><a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_linknoline">Link
+                that is not underlined</a><br>
+              How to make a link that is not underlined, with the style
+              attribute.</p>
+            <hr>
+            <h2>HTML Style Tags</h2>
+            <table class="reference notranslate">
+              <tbody>
+                <tr>
+                  <th>태그</th>
+                  <th>설명</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_style.asp">&lt;style&gt;</a></td>
+                  <td>문서에 대한 스타일 정보를 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_link.asp">&lt;link&gt;</a></td>
+                  <td>문서와 외부 자원과의 관계를 정의&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2><strong>사용되지 않는 태그 및 속성</strong></h2>
+            <p> HTML 4 에서, 몇개의 태그와 속성이 문서를 스타일하는데 사용되었다. 이들 태그는 HTML 최신 버전에서는
+              지원되지 않는다.</p>
+            <p><strong>사용하지 말아야 될 요소</strong>: <strong>&lt;font&gt;,
+                &lt;center&gt;, </strong>와<strong> &lt;strike&gt;, </strong>와
+              <strong>속성들</strong>: <strong>color</strong> 와 <strong>bgcolor</strong>.</p>
+            <br>
+            <div class="chapter">
+              <div class="prev"><a class="chapter" href="html%20lists.html">«
+                  Previous</a></div>
+              <div class="next"><a class="chapter" href="HTML%20Formatting.html">Next
+                  Chapter »</a></div>
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr style="height:5px;">
+  </body>
+</html>

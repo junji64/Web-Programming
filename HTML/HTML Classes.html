@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Classes</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto;">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px;">
+        <div>
+          <div id="main" style="width:auto;">
+            <h1>HTML <span class="color_h1">Classes</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Block%20Elements.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20colors.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <p>HTML 요소에 class를 부여하면, 요소의 클래스에 대한 CSS styles 정의를 가능하게 해준다. </p>
+            <p>같은 class 들에는 같은 styles 을, 다른 class 들에는 다른 styles 을 적용하게 된다. </p>
+            <hr>
+            <div style="width:60%;background-color:black;color:white;margin:20px;margin-left:0;padding:20px;">
+              <h2 style="color:white;">London</h2>
+              <p> London is the capital city of England. It is the most populous
+                city in the United Kingdom, with a metropolitan area of over 13
+                million inhabitants. </p>
+              <p> Standing on the River Thames, London has been a major
+                settlement for two millennia, its history going back to its
+                founding by the Romans, who named it Londinium. </p>
+            </div>
+            <div class="w3-example">
+              <h2>Example</h2>
+              <div class="w3-code notranslate htmlHigh"> &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                .cities {<br>
+                &nbsp;&nbsp;&nbsp; background-color:black;<br>
+                &nbsp;&nbsp;&nbsp; color:white;<br>
+                &nbsp;&nbsp;&nbsp; margin:20px;<br>
+                &nbsp;&nbsp;&nbsp; padding:20px;<br>
+                } <br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                <br>
+                &lt;body&gt;<br>
+                <br>
+                &lt;div class="cities"&gt;<br>
+                &lt;h2&gt;London&lt;/h2&gt;<br>
+                &lt;p&gt;<br>
+                London is the capital city of England. It is the most populous
+                city in the United Kingdom, with a metropolitan area of over 13
+                million inhabitants.<br>
+                &lt;/p&gt;<br>
+                &lt;/div&gt; <br>
+                <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;</div>
+              <br>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_london"
+
+                target="_blank"> Try it Yourself »</a> </div>
+            <hr>
+            <h2>블록(Block) 요소의 클래스화(Classing) </h2>
+            <p>HTML &lt;div&gt; 요소는 블록 레벨(<strong>block level</strong>) 요소로, 다른
+              요소를 담는데 사용할 수 있다.</p>
+            <p>&lt;div&gt; 요소의 클래스화(Classing)는 동일한 &lt;div&gt; 요소들에 대한 같은 styles
+              을 정의 할 수 있게 해 준다. :</p>
+            <hr>
+            <div style="width:60%;background-color:black;color:white;margin:20px;margin-left:0;padding:20px;">
+              <h2 style="color:white;">London</h2>
+              <p> London is the capital city of England. It is the most populous
+                city in the United Kingdom, with a metropolitan area of over 13
+                million inhabitants. </p>
+              <p> Standing on the River Thames, London has been a major
+                settlement for two millennia, its history going back to its
+                founding by the Romans, who named it Londinium. </p>
+            </div>
+            <div style="width:60%;background-color:black;color:white;margin:20px;margin-left:0;padding:20px;">
+              <h2 style="color:white;">Paris</h2>
+              <p> Paris is the capital and most populous city of France. </p>
+              <p> Situated on the Seine River, it is at the heart of the
+                Île-de-France region, also known as the région parisienne. </p>
+              <p> Within its metropolitan area is one of the largest population
+                centers in Europe, with over 12 million inhabitants. </p>
+            </div>
+            <div style="width:60%;background-color:black;color:white;margin:20px;margin-left:0;padding:20px;">
+              <h2 style="color:white;">Tokyo</h2>
+              <p> Tokyo is the capital of Japan, the center of the Greater Tokyo
+                Area, and the most populous metropolitan area in the world. </p>
+              <p> It is the seat of the Japanese government and the Imperial
+                Palace, and the home of the Japanese Imperial Family. </p>
+              <p> The Tokyo prefecture is part of the world's most populous
+                metropolitan area with 38 million people and the world's largest
+                urban economy. </p>
+            </div>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">style</span><span
+
+                  class="highGT">&gt;</span><br>
+                div.cities {<br>
+                &nbsp;&nbsp;&nbsp; background-color:black;<br>
+                &nbsp;&nbsp;&nbsp; color:white;<br>
+                &nbsp;&nbsp;&nbsp; margin:20px;<br>
+                &nbsp;&nbsp;&nbsp; padding:20px;<br>
+                } <br>
+                <span class="highLT">&lt;</span><span class="highELE">/style</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">div</span>
+                <span class="highATT">class=</span><span class="highVAL">"cities"</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">h2</span><span
+
+                  class="highGT">&gt;</span>London<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h2</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>London is the capital city of
+                England. It is the most populous city in the United Kingdom,
+                with a metropolitan area of over 13 million inhabitants.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/div</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">div</span>
+                <span class="highATT">class=</span><span class="highVAL">"cities"</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">h2</span><span
+
+                  class="highGT">&gt;</span>Paris<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h2</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>Paris is the capital and most
+                populous city of France.<span class="highLT">&lt;</span><span class="highELE">/p</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/div</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">div</span>
+                <span class="highATT">class=</span><span class="highVAL">"cities"</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">h2</span><span
+
+                  class="highGT">&gt;</span>Tokyo<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h2</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>Tokyo is the capital of Japan, the
+                center of the Greater Tokyo Area,<br>
+                and the most populous metropolitan area in the world.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/div</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_capitals"
+
+                target="_blank"> Try it Yourself »</a> </div>
+            <hr>
+            <h2>인라인(Inline) 요소의 클래스화(Classing) </h2>
+            <p>HTML &lt;span&gt; 요소는 텍스트를 담는데 사용 가능한 인라인(inline) 요소이다.</p>
+            <p>&lt;span&gt; 요소의 클래스화(Classing)는 동일한 &lt;span&gt; 요소들에 대한 같은
+              styles 을 정의 할 수 있게 해준다. </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">style</span><span
+
+                  class="highGT">&gt;</span><br>
+                span.note {font-size:120%;color:red;}<br>
+                <span class="highLT">&lt;</span><span class="highELE">/style</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">h1</span><span
+
+                  class="highGT">&gt;</span>My <span class="highLT">&lt;</span><span
+
+                  class="highELE">span</span> <span class="highATT">class=</span><span
+
+                  class="highVAL">"note"</span><span class="highGT">&gt;</span>Important<span
+
+                  class="highLT">&lt;</span><span class="highELE">/span</span><span
+
+                  class="highGT">&gt;</span> Heading<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h1</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>This is some <span class="highLT">&lt;</span><span
+
+                  class="highELE">span</span> <span class="highATT">class=</span><span
+
+                  class="highVAL">"note"</span><span class="highGT">&gt;</span>important<span
+
+                  class="highLT">&lt;</span><span class="highELE">/span</span><span
+
+                  class="highGT">&gt;</span> text.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_span"
+
+                target="_blank"> Try it Yourself »</a> </div>
+            <hr>
+            <h2>Test Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_classes1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_classes2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_classes3"
+
+                target="_blank">Exercise 3 »</a> </p>
+            <br>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Block%20Elements.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20colors.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

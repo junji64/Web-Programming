@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Iframes</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto;">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px;">
+        <div>
+          <div id="main" style="width:auto;">
+            <h1>HTML <span class="color_h1">Iframes</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Responsive%20Web.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Colors.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <p class="intro">iframe는 웹 페이지 내에서 웹 페이지를 표시하기 위해 사용된다.</p>
+            <iframe src="http://www.w3schools.com/html/default.asp" height="300px"
+
+              width="99%"></iframe>
+            <hr>
+            <p><b>iframe 을 추가하는 문법:</b></p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">iframe</span> <span class="highATT">src=</span><span
+
+                  class="highVAL">"<em>URL</em>"</span><span class="highGT">&gt;</span><span
+
+                  class="highLT">&lt;</span><span class="highELE">/iframe</span><span
+
+                  class="highGT">&gt;</span> </div>
+            </div>
+            <p>src 속성은 iframe 페이지의&nbsp;URL 을 명시한다. </p>
+            <hr>
+            <h2>Iframe - <strong>높이 및 너비 설정</strong></h2>
+            <p> height 와 width 속성은 iframe 의 높이와 너비를 지정하는 데 사용됩니다..</p>
+            <p>속성 값은 기본적으로 픽셀 단위로 지정된다, 그러나 ( "80 %"처럼) %로도 할 수있다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">iframe</span> <span class="highATT">src=</span><span
+
+                  class="highVAL">"demo_iframe.htm"</span> <span class="highATT">width=</span><span
+
+                  class="highVAL">"200"</span> <span class="highATT">height=</span><span
+
+                  class="highVAL">"200"</span><span class="highGT">&gt;</span><span
+
+                  class="highLT">&lt;</span><span class="highELE">/iframe</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Iframe - <strong>테두리 제거</strong></h2>
+            <p> frameborder 속성은 iframe 주위에&nbsp;테두리를 표시할지 여부를 지정합니다. 테두리를 제거하기
+              위해 속성 값 "0" 을 설정합니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">iframe</span> <span class="highATT">src=</span><span
+
+                  class="highVAL">"demo_iframe.htm"</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"border:none"</span><span class="highGT">&gt;</span><span
+
+                  class="highLT">&lt;</span><span class="highELE">/iframe</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_frameborder"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <br>
+            <hr>
+            <h2><strong>링크의 타겟(target)으로 </strong>iframe<strong> 사용</strong></h2>
+            <p>iframe 은 링크에 대한 타겟 프레임으로서 사용될 수 있다</p>
+            <p>링크의 target 속성은 iframe 대응의 name 속성을 참조해야합니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">iframe</span> <span class="highATT">src=</span><span
+
+                  class="highVAL">"demo_iframe.htm"</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"border:5px dotted red"</span><span class="highGT">&gt;</span><span
+
+                  class="highLT">&lt;</span><span class="highELE">/iframe</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_border2"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>HTML iframe Tag</h2>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th>Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_iframe.asp">&lt;iframe&gt;</a></td>
+                  <td>Defines an inline frame</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2 style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 30px; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Test
+              Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_iframe1"
+
+                target="_blank">Exercise 1 »</a>&nbsp;&nbsp; <a class="w3-btn"
+
+                href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_iframe2"
+
+                target="_blank">Exercise 2 »</a>&nbsp;&nbsp; <a class="w3-btn"
+
+                href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_iframe3"
+
+                target="_blank">Exercise 3 »</a>&nbsp;&nbsp; <a class="w3-btn"
+
+                href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_iframe4"
+
+                target="_blank">Exercise 4 »</a> </p>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Responsive%20Web.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Colors.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+    <hr style="height:5px;">
+  </body>
+</html>
