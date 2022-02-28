@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+              <html lang="en-US">
+                <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Input 요소의 타입들(types)</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+                </head>
+    <body><br>
+      <div id="belowTopnav" style="width:auto">
+        <div id="page" style="width:auto; padding:30px; margin-right:10px">
+          <div>
+            <div id="main" style="width:auto">
+              <h1>HTML <span class="color_h1">Input 요소의 타입들(types)</span></h1>
+              <div class="chapter">
+                            
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20input%20Elements.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Input%20Attributes.html">Next
+                  Chapter »</a> </div>
+
+                          </div>
+                          <hr>
+                          <p>이 장에서는 <strong>&lt;input&gt;</strong> 요소의 입력 타입(<strong>type</strong>)
+                            들을 설명한다.&nbsp; </p>
+            <p>HTML에서 사용할 수 있는 다른 input type은 다음과 같습니다.:</p>
+<ul>
+  <li><code class="w3-codespan">&lt;input type=&quot;button&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;checkbox&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;color&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;date&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;datetime-local&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;email&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;file&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;hidden&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;image&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;month&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;number&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;password&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;radio&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;range&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;reset&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;search&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;submit&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;tel&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;text&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;time&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;url&quot;&gt;</code></li>
+  <li><code class="w3-codespan">&lt;input type=&quot;week&quot;&gt;</code></li>
+</ul>
+                          <hr>
+                          <h2>Input Type: text</h2>
+                          <p><strong>&lt;input type="text"&gt;</strong> 텍스트 입력(<strong>text
+                              input</strong>)위 <strong>한 줄</strong>의 입력 필드를 정의
+                            <strong>text input</strong>:</p>
+                          <div class="w3-example">
+                            <h3>Example</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                              <span class="highLT">&lt;</span><span class="highELE">form</span><span
+
+                                class="highGT">&gt;</span><br>
+                              &nbsp;
+                              First name:<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+                                class="highGT">&gt;</span><br>
+                              &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                              <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                              <span class="highATT">name=</span><span class="highVAL">"firstname"</span><span
+
+                                class="highGT">&gt;</span><span class="highLT">&lt;</span><span
+
+                                class="highELE">br</span><span class="highGT">&gt;</span><br>
+                              &nbsp;
+                              Last name:<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+                                class="highGT">&gt;</span><br>
+                              &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                              <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                              <span class="highATT">name=</span><span class="highVAL">"lastname"</span><span
+
+                                class="highGT">&gt;</span><br>
+                              <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+                                class="highGT">&gt;</span>
+                            </div>
+                            <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_text"
+
+                              target="_blank">Try it Yourself »</a>
+                          </div>
+                          <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다:</p>
+                          First name:<br>
+                          <input type="text"><br>
+                          Last name:<br>
+                          <input type="text"><br>
+                          <hr>
+                          <h2>Input Type: password</h2>
+                          <p><strong>&lt;input type="password"&gt;</strong>
+                            는&nbsp; <strong>password 필드</strong>를 정의한다.</p>
+                          <p>password 필드의 문자는 <strong>별표</strong>나 <strong>동그라
+                              미</strong>로<strong> 표시</strong>로 가려집니다. </p>
+                          <div class="w3-example">
+                            <h3>Example</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                              <span class="highLT">&lt;</span><span class="highELE">form</span><span
+
+                                class="highGT">&gt;</span><br>
+                              &nbsp; User name:<span class="highLT">&lt;</span><span
+
+                                class="highELE">br</span><span class="highGT">&gt;</span><br>
+                              &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                              <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                              <span class="highATT">name=</span><span class="highVAL">"username"</span><span
+
+                                class="highGT">&gt;</span><span class="highLT">&lt;</span><span
+
+                                class="highELE">br</span><span class="highGT">&gt;</span><br>
+                              &nbsp; User password:<span class="highLT">&lt;</span><span
+
+                                class="highELE">br</span><span class="highGT">&gt;</span><br>
+                              &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                              <span class="highATT">type=</span><span class="highVAL">"password"</span>
+                              <span class="highATT">name=</span><span class="highVAL">"psw"</span><span
+
+                                class="highGT">&gt;</span><br>
+                              <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+                                class="highGT">&gt;</span>
+                            </div>
+                            <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_password"
+
+                              target="_blank">Try it Yourself »</a>
+                          </div>
+                          <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다.:</p>
+                          User name:<br>
+                          <input type="text"><br>
+                          User password:<br>
+                          <input type="password">
+                          <p> </p>
+                          <hr>
+                          <h2>Input Type: submit</h2>
+                          <p><strong>&lt;input type="submit"&gt;</strong> 는 <strong>폼
+                              -헨들러 (form- handler)</strong>에게 폼을 <strong>제출</strong>하
+                            는 버튼을 정의합니다. </p>
+                          <p>폼-헨들러(form-handler)는 일반적으로 입력 자료를 처리할<strong> 스크립트로
+                              이루어진 서버페이지</strong>이 다. </p>
+                          <p>폼-헨들러(form-handler)는 폼의 <strong>action 속성</strong>에
+                            명시되며 일반적으로 수신된 입력을 가지고 무언가를 수행합니다.:</p>
+                          <div class="w3-example">
+                            <h3>Example</h3>
+                            <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                                class="highELE">form</span> <span class="highATT">action=</span><span
+
+                                class="highVAL">"action_page.php"</span><span class="highGT">&gt;</span><br>
+                              &nbsp; First name:<span class="highLT">&lt;</span><span
+
+                                class="highELE">br</span><span class="highGT">&gt;</span><br>
+                              &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                              <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                              <span class="highATT">name=</span><span class="highVAL">"firstname"</span>
+                              <span class="highATT">value=</span><span class="highVAL">"Mickey"</span><span
+
+                                class="highGT">&gt;</span><span class="highLT">&lt;</span><span
+
+                                class="highELE">br</span><span class="highGT">&gt;</span><br>
+                              &nbsp; Last name:<span class="highLT">&lt;</span><span
+
+                                class="highELE">br</span><span class="highGT">&gt;</span><br>
+                              &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                              <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                              <span class="highATT">name=</span><span class="highVAL">"lastname"</span>
+                              <span class="highATT">value=</span><span class="highVAL">"Mouse"</span><span
+
+                                class="highGT">&gt;</span><span class="highLT">&lt;</span><span
+
+                                class="highELE">br</span><span class="highGT">&gt;</span><span
+
+                                class="highLT">&lt;</span><span class="highELE">br</span><span
+
+                                class="highGT">&gt;</span><br>
+                              &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                              <span class="highATT">type=</span><span class="highVAL">"submit"</span>
+                              <span class="highATT">value=</span><span class="highVAL">"Submit"</span><span
+
+                                class="highGT">&gt;</span><br>
+                              <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+                                class="highGT">&gt;</span>
+                            </div>
+                            <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_submit"
+
+                              target="_blank">Try it Yourself »</a>
+                          </div>
+                          <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다.</p>
+                          <form action="action_page.php" target="_blank"> First
+                            name:<br>
+                            <input name="firstname" value="Mickey" size="20" type="text">
+                            <br>
+                            Last name:<br>
+                            <input name="lastname" value="Mouse" size="20" type="text">
+                            <br>
+                            <br>
+                            <input value="Submit" type="submit"> </form>
+            <p><br>
+              submit 버튼의 value 속성을 생략하며, 버튼에는 기본값이 할당된다.:</p>
+            <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ <span class="highLT">&lt;</span><span class="highELE">form</span> <span class="highATT">action=</span><span
+
+class="highVAL">"action_page.php"</span><span class="highGT">&gt;</span><br>&nbsp; First name:<span
+
+class="highLT">&lt;</span><span class="highELE">br</span><span class="highGT">&gt;</span><br>&nbsp; <span
+
+class="highLT">&lt;</span><span class="highELE">input</span> <span class="highATT">type=</span><span
+
+class="highVAL">"text"</span> 
+ <span class="highATT">name=</span><span class="highVAL">"firstname"</span> <span
+
+class="highATT">value=</span><span class="highVAL">"Mickey"</span><span class="highGT">&gt;</span><span
+
+class="highLT">&lt;</span><span class="highELE">br</span><span class="highGT">&gt;</span><br>&nbsp; Last name:<span
+
+class="highLT">&lt;</span><span class="highELE">br</span><span class="highGT">&gt;</span><br>&nbsp; <span
+
+class="highLT">&lt;</span><span class="highELE">input</span> 
+ <span class="highATT">type=</span><span class="highVAL">"text"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"lastname"</span> <span class="highATT">value=</span><span class="highVAL">"Mouse"</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"submit"</span><span class="highGT">&gt;</span><br><span
+
+class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_submit_nn"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <hr>
+            <h2>Input Type: radio</h2>
+            <p><strong>&lt;input type="radio"&gt;</strong> 라디오 버튼(<strong>radio
+                button</strong>)을 정의합니다. </p>
+            <p>라디오 버튼은 사용자가 제한된 개수의 선택 중 <strong>하나만 선택</strong>할 수 있습니다 : </p>
+            <div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form&gt;<br>&nbsp; &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; 
+  value=&quot;male&quot;&gt;<br>&nbsp; &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input 
+  type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;<br>&nbsp; &lt;label 
+  for=&quot;female&quot;&gt;Female&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;radio&quot; id=&quot;other&quot; 
+  name=&quot;gender&quot; value=&quot;other&quot;&gt;<br>&nbsp; &lt;label for=&quot;other&quot;&gt;Other&lt;/label&gt;<br>&lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다.:</p>
+            <input name="sex" value="V1" checked="checked" type="radio">Male <br>
+            <input name="sex" value="V2" type="radio">Female <br>
+            <hr>
+            <h2>Input Type: checkbox</h2>
+            <p><strong>&lt;input type="checkbox"&gt;</strong> 체크박스(<strong>checkbox</strong>)
+              를 정의 합니다.</p>
+            <p>체크박스는 제한된 선택들 중에서 사용자가 임의의 개 수를 선택할 수 있게 해준다. </p>
+            <div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ <span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp; <span
+
+class="highLT">&lt;</span><span class="highELE">input</span> <span class="highATT">type=</span><span
+
+class="highVAL">"checkbox"</span> <span class="highATT">name=</span><span class="highVAL">"vehicle1"</span> <span
+
+class="highATT">value=</span><span class="highVAL">"Bike"</span><span class="highGT">&gt;</span> 
+	I have a bike<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>
+&nbsp;
+<span class="highLT">&lt;</span><span class="highELE">input</span> <span class="highATT">type=</span><span
+
+class="highVAL">"checkbox"</span> <span class="highATT">name=</span><span class="highVAL">"vehicle2"</span> <span
+
+class="highATT">value=</span><span class="highVAL">"Car"</span><span class="highGT">&gt;</span> I have a car <br>
+ <span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_checkbox"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다.:</p>
+            <input name="vehicle1" value="Bike" type="checkbox">I have a bike <br>
+            <input name="vehicle" value="Car" type="checkbox">I have a car <br>
+            <hr>
+            <h2>Input Type: button</h2>
+            <p><strong>&lt;input type="button"&gt;</strong>&nbsp; 버튼(<strong>button</strong>)
+              을 정의:</p>
+            <div class="w3-example">
+ <h3>Example</h3>
+ <div class="w3-code notranslate htmlHigh">
+  <span class="highLT">&lt;</span><span class="highELE">input</span> <span class="highATT">type=</span><span
+
+class="highVAL">"button"</span> <span class="highATT">onclick=</span><span class="highVAL">"alert('Hello World!')"</span> <span
+
+class="highATT">value=</span><span class="highVAL">"Click Me!"</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_button"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다.:</p>
+            <input onclick="alert('Hello World!')" value="Click Me!" type="button">
+            <br>
+            <hr>
+            <h2>Input Type: number</h2>
+            <p><strong>&lt;input type="number"&gt;</strong> 는 숫자 값을 포함해야 하는
+              입력필드에 사용됩니다.&nbsp;</p>
+            <p>숫자에 한계를 설정할 수 있습니다.</p>
+            <p>브라우저의 지원에 따라서, 한계를 입력 필드에 표시될 수도 있다.</p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Quantity (between 1 and 5):<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"number"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"quantity"</span> <span class="highATT">min=</span><span class="highVAL">"1"</span> 
+	<span class="highATT">max=</span><span class="highVAL">"5"</span><span class="highGT">&gt;</span><br><span
+
+class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_number"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <hr>
+            <h2>Input 제한(Restrictions)</h2>
+            <p>일반적인 input 제한(restrictions)은 다음과 같다. :</p>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Attribute</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>disabled</td>
+                  <td>Specifies that an input field should be disabled</td>
+                </tr>
+                <tr>
+                  <td class="html5badge">max</td>
+                  <td>Specifies the maximum value for an input field</td>
+                </tr>
+                <tr>
+                  <td>maxlength</td>
+                  <td>Specifies the maximum number of character for an input
+                    field</td>
+                </tr>
+                <tr>
+                  <td class="html5badge">min</td>
+                  <td>Specifies the minimum value for an input field</td>
+                </tr>
+                <tr>
+                  <td class="html5badge">pattern</td>
+                  <td>Specifies a regular expression to check the input value
+                    against</td>
+                </tr>
+                <tr>
+                  <td>readonly</td>
+                  <td>Specifies that an input field is read only (cannot be
+                    changed)</td>
+                </tr>
+                <tr>
+                  <td class="html5badge">required</td>
+                  <td>Specifies that an input field is required (must be filled
+                    out)</td>
+                </tr>
+                <tr>
+                  <td>size</td>
+                  <td>Specifies the width (in characters) of an input field</td>
+                </tr>
+                <tr>
+                  <td class="html5badge">step</td>
+                  <td>Specifies the legal number intervals for an input field</td>
+                </tr>
+                <tr>
+                  <td>value</td>
+                  <td>Specifies the default value for an input field</td>
+                </tr>
+              </tbody>
+            </table>
+            <p> </p>
+            <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp; Quantity:<br>&nbsp;
+<span class="highLT">&lt;</span><span class="highELE">input</span> <span class="highATT">type=</span><span
+
+class="highVAL">"number"</span> <span class="highATT">name=</span><span class="highVAL">"points"</span>
+<span class="highATT">min=</span><span class="highVAL">"0"</span> <span class="highATT">max=</span><span
+
+class="highVAL">"100"</span> <span class="highATT">step=</span><span class="highVAL">"10"</span> <span
+
+class="highATT">value=</span><span class="highVAL">"30"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_number_step"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <hr>
+            <h2>Input Type: date</h2>
+            <p><strong>&lt;input type="date"&gt;</strong> 는 사용자가 날짜를 포함해야 하는 입력
+              필드에 사용됩니다.</p>
+            <p>브라우저의 지원에 따라서,&nbsp; 날짜 선택기(date picker)가 입력 필드로 표시될 수도 있다. </p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Birthday:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"date"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"bday"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <p>입력에 제한을 추가 할 수도 있다. :</p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp; Enter a date before 1980-01-01:<br>&nbsp; <span
+
+class="highLT">&lt;</span><span class="highELE">input</span> 
+	<span class="highATT">type=</span><span class="highVAL">"date"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"bday"</span> <span class="highATT">max=</span><span class="highVAL">"1979-12-31"</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>&nbsp; Enter a date after 
+	2000-01-01:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"date"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"bday"</span> <span class="highATT">min=</span><span class="highVAL">"2000-01-02"</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date_max_min"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <hr>
+            <h2>Input Type: color</h2>
+            <p><strong>&lt;input type="color"&gt;</strong> 는 색상을 포함해야 하는 입력 필드에
+              사용됩니다.</p>
+            <p>브라우저의 지원에 따라서, 색상 선택기(color picker)가 입력 필드에 표시될 수도 있다.</p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Select your favorite color:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"color"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"favcolor"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <hr>
+            <h2>Input Type: range</h2>
+            <p><strong>&lt;input type="range"&gt;</strong> 는 값이 범위 안에 있어야하는 입력
+              필드에 사용됩니다.</p>
+            <p>브라우저의 지원에 따라서, 입력 필드가 슬라이드 콘트롤(slider control)로 표시될 수 있다.</p>
+            <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    <span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+    <span class="highLT">&lt;</span><span class="highELE">input</span> <span class="highATT">type=</span><span
+
+class="highVAL">"range"</span> <span class="highATT">name=</span><span class="highVAL">"points"</span> <span
+
+class="highATT">min=</span><span class="highVAL">"0"</span> <span class="highATT">max=</span><span
+
+class="highVAL">"10"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_range"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <p>제한을 지정하기위해 다음의 속성들을 사용할 수 있다.: min, max, step, value.</p>
+            <hr>
+            <h2>Input Type: month</h2>
+            <p><strong>&lt;input type="month"&gt;</strong> 사용자가 월과 연도를 선택할 수 있게
+              해준다.</p>
+            <p>브라우저의 지원에 따라서,&nbsp; 날짜 선택기(date picker)가 입력 필드로 표시될 수도 있다.&nbsp;</p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Birthday (month and year):<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"month"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"bdaymonth"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_month"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <hr>
+            <h2>Input Type: week</h2>
+            <p><strong>&lt;input type="week"&gt;</strong> 사용자가 주과 연도를 선택할 수 있게
+              해준다.</p>
+            <p>브라우저의 지원에 따라서,&nbsp; 날짜 선택기(date picker)가 입력 필드로 표시될 수도 있다. </p>
+            <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Select a week:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"week"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"week_year"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_week"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <hr>
+            <h2>Input Type: time</h2>
+            <p><strong>&lt;input type="time"&gt;</strong> 사용자가 시간을 선택할 수 있게 해준다
+              (no time zone).</p>
+            <p>브라우저의 지원에 따라서,&nbsp; 시간 선택기(time picker)가 입력 필드로 표시될 수도 있다. </p>
+            <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Select a time:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"time"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"usr_time"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_time"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <hr>
+            <h2>Input Type: datetime</h2>
+            <p><strong>&lt;input type="datetime"&gt;</strong> 사용자가 날짜와 시간을 (시간대와
+              함께) 선택할 수 있게 해준다.</p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Birthday (date and time):<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"datetime"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"bdaytime"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_datetime"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+alt="Note" style="height:32px;width:32px"></th>
+                  <td> The input type datetime is removed from the HTML
+                    standard. Use datetime-local instead. </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>Input Type: datetime-local</h2>
+            <p><strong>&lt;input type="datetime-local"&gt;</strong>사용자가 날짜와 시간을
+              (시간대 없이) 선택할 수 있게 해준다.</p>
+            <p>브라우저의 지원에 따라서,&nbsp; 날짜 선택기(date picker)가 입력 필드로 표시될 수도 있다. </p>
+            <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Birthday (date and time):<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"datetime-local"</span> <span
+
+class="highATT">name=</span><span class="highVAL">"bdaytime"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_datetime-local"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <hr>
+            <h2>Input Type: email</h2>
+            <p><strong>&lt;input type="email"&gt;</strong> 는 e-메일 주소를 포함해야 하는 입력
+              필드에 사용된다.</p>
+            <p>브라우저의 지원에 따라서, 폼이 제출 될 때&nbsp; e-메일 주소가 자동으로 유효성 검사가 될 수 있습니다.</p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	E-mail:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"email"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"email"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_email"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <hr>
+            <h2>Input Type: search</h2>
+            <p><strong>&lt;input type="search"&gt;</strong> 는 검색 필드에 사용됩니다. (검색
+              필드는 일반 텍스트 필드처럼 동작된다.)&nbsp;</p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Search Google:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"search"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"googlesearch"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_search"
+
+target="_blank">Try it Yourself »</a> 
+</div>
+            <hr>
+            <h2>Input Type: tel</h2>
+            <p><strong>&lt;input type="tel"&gt;</strong> 는 전화 번호를 포함해야 하는 입력 필드에
+              사용됩니다.</p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+    <span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+    Telephone:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"tel"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"usrtel"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_tel"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <hr>
+            <h2>Input Type: url</h2>
+            <p><strong>&lt;input type="url"&gt; </strong>은 URL 주소를 포함하는 입력 필드에
+              사용됩니다. </p>
+            <p>브라우저의 지원에 따라서, 폼이 제출 될 때 URL 필드의 값이 자동으로 유효성 검사가 될 수 있습니다.</p>
+            <p> </p>
+            <div class="w3-example">
+
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span class="highLT">&lt;</span><span class="highELE">form</span><span class="highGT">&gt;</span><br>&nbsp;
+	Add your homepage:<br>&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span> <span
+
+class="highATT">type=</span><span class="highVAL">"url"</span> <span class="highATT">name=</span><span
+
+class="highVAL">"homepage"</span><span class="highGT">&gt;</span><br>
+	<span class="highLT">&lt;</span><span class="highELE">/form</span><span class="highGT">&gt;</span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_url"
+
+target="_blank">Try it Yourself »</a>
+</div>
+            <br>
+            <hr>
+            <h2>Test Yourself with Exercises!</h2>
+            <p>
+<a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types1"
+
+target="_blank">Exercise 1 »</a>&nbsp;&nbsp;&nbsp;
+<a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types2"
+
+target="_blank">Exercise 2 »</a>&nbsp;&nbsp;&nbsp;
+<a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types3"
+
+target="_blank">Exercise 3 »</a>&nbsp;&nbsp;&nbsp;
+<a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types4"
+
+target="_blank">Exercise 4 »</a>&nbsp;&nbsp;&nbsp;
+<a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types5"
+
+target="_blank">Exercise 5 »</a>
+</p>
+            <br>
+            <hr>
+            <div class="chapter">
+                                         <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20input%20Elements.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Input%20Attributes.html">Next
+                  Chapter »</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body></html>

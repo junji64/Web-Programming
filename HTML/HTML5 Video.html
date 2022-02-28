@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"><title>HTML5 Video</title>
+
+<script>
+function checkVideo()
+{
+if(!!document.createElement('video').canPlayType)
+{
+var vidTest=document.createElement("video");
+oggTest=vidTest.canPlayType('video/ogg; codecs="theora, vorbis"');
+if (!oggTest)
+{
+h264Test=vidTest.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"');
+if (!h264Test)
+{
+document.getElementById("checkVideoResult").innerHTML="Sorry. No video support."
+}
+else
+{
+if (h264Test=="probably")
+{
+document.getElementById("checkVideoResult").innerHTML="Yeah! Full support!";
+}
+else
+{
+document.getElementById("checkVideoResult").innerHTML="Meh. Some support.";
+}
+}
+}
+else
+{
+if (oggTest=="probably")
+{
+document.getElementById("checkVideoResult").innerHTML="Yeah! Full support!";
+}
+else
+{
+document.getElementById("checkVideoResult").innerHTML="Meh. Some support.";
+}
+}
+}
+else
+{
+document.getElementById("checkVideoResult").innerHTML="Sorry. No video support."
+}
+}
+</script>
+<style>a.menu_html5_video{font-weight:bold;}</style>
+<meta name="viewport" content="width=device-width">
+<meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+<meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3855518-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script>
+<!--
+function searchfield_focus(obj)
+{
+obj.style.color=""
+obj.style.fontStyle=""
+if (obj.value=="Search w3schools.com")
+{obj.value=""}
+}
+var addr=document.location.href;
+function displayError()
+{
+document.getElementById("err_url").value=addr;
+document.getElementById("err_form").style.display="block";
+document.getElementById("err_desc").focus();
+hideSent();
+}
+function hideError()
+{
+document.getElementById("err_form").style.display="none";
+}
+function hideSent()
+{
+document.getElementById("err_sent").style.display="none";
+}
+function sendErr()
+{
+var xmlhttp;
+var err_url=document.getElementById("err_url").value;
+var err_email=document.getElementById("err_email").value;
+var err_desc=document.getElementById("err_desc").value;
+if (window.XMLHttpRequest)
+{// code for IE7+, Firefox, Chrome, Opera, Safari
+xmlhttp=new XMLHttpRequest();
+}
+else
+{// code for IE6, IE5
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.open("POST","/err_sup.asp",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+document.getElementById("err_desc").value="";
+hideError();
+document.getElementById("err_sent").style.display="block";
+}
+//-->
+</script>
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16833175/BottomMediumRectangle', [300, 250], 'div-gpt-ad-1383210480969-0').addService(googletag.pubads());
+googletag.defineSlot('/16833175/LargePS', [[723, 280], [723, 400]], 'div-gpt-ad-1383210480969-1').addService(googletag.pubads());
+googletag.defineSlot('/16833175/MainLeaderboard', [728, 90], 'div-gpt-ad-1383210480969-2').addService(googletag.pubads());
+googletag.defineSlot('/16833175/SmallPS', [723, 170], 'div-gpt-ad-1383210480969-3').addService(googletag.pubads());
+googletag.defineSlot('/16833175/WideSkyScraper', [160, 600], 'div-gpt-ad-1383210480969-4').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","html");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<script>
+(function() {
+var cx = '012971019331610648934:m2tou3_miwy';
+var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+</head>
+
+  <body>
+<div id="belowTopnav">
+<div id="page">
+<div><br>
+<div id="main">
+<h1>HTML5 <span class="color_h1">Video</span></h1>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="html5%20svg.html">« Previous</a></div>
+<div class="next"><a class="chapter" href="html5%20audio.html">Next Chapter »</a></div>
+</div>
+<hr>
+<p class="intro">현대의 많은 웹 사이트에서 동영상을
+보여줍니다.&nbsp;HTML5는 이를 표시하기 위한 표준을 제공합니다.</p>
+<div class="example">
+<h2 class="example">Check if your browser supports HTML5
+video </h2>
+<div class="example_code notranslate">
+<div id="checkVideoResult"><button onclick="checkVideo()">Check</button></div>
+</div>
+</div>
+<br>
+<hr>
+<h2>Video on the Web</h2>
+<p> HTML5 이전에는, 웹 페이지에서 비디오/영화를 보여주는 표준이 없었다.</p>
+<p> HTML5 이전에는, 동영상은 의 플러그인(flash 같은)으로만 보여질 수 있었으마, 다른 브라우저는 서로
+다른 플러그인을 지원했었다.</p>
+<p>HTML5 웹 페이지에 비디오나 동영상을 포함하는 표준 방식을 지정하는 새 요소를 정의합니다: <strong>&lt;video&gt;</strong>
+요소.</p>
+<hr>
+<p>&nbsp;</p>
+<h2>HTML5 Video - How It Works</h2>
+<p>HTML5 에서 비디오를 표시하려면, 당신이 필요한 모두는 다음과 같다:</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<div class="example_code notranslate"> &lt;video
+width="320" height="240" controls&gt;<br>
+&nbsp; &lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+&nbsp; &lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+Your browser does not support the video tag.<br>
+&lt;/video&gt; </div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_all" target="_blank">Try it yourself »</a> </div>
+<p>control 속성은 재생(play), 일시 정지(pause), 볼륨(volume)과 같은 비디오 컨트롤을
+추가합니다.</p>
+<p>또한 항상 width과 height 속성을 포함하는 것이 좋습니다. 높이와 폭이 모두 설정되면 페이지가 로드 될
+때, 영상에 필요한 공간은 예약된다.&nbsp;그러나, 이러한 속성이 없으면 브라우저는 비디오의 크기를 모르고, 그것에
+적절한 공간을 확보 할 수 없다. 그 결과 비디오 로드하는 동안 페이지 레이아웃이 변경될 것이라는 것 입니다. </p>
+<p>또한 &lt;video&gt;와 &lt;/video&gt; 태그 사이에
+&lt;video&gt; 요소를 지원하지 않는 브라우저를 위한 텍스트 내용을 삽입해야합니다.</p>
+<p>&lt;video&gt; 요소는 여러 &lt;source&gt; 요소를
+허용합니다.&nbsp;&lt;source&gt; 요소는 서로 다른 비디오 파일을 링크 할 수
+있습니다.&nbsp;브라우저는 처음 인식 되는 형식을 사용합니다. </p>
+<hr>
+<h2>Video Formats and Browser Support</h2>
+<p>현재 , &lt;video&gt; 요소에서는 3가지 비디오 포맷이 지원 됩니다: MP4,
+WebM, 과 Ogg:</p>
+<table class="reference notranslate">
+<tbody>
+<tr>
+<th style="width: 25%;">Browser</th>
+<th style="width: 25%;">MP4</th>
+<th style="width: 25%;">WebM</th>
+<th style="width: 25%;">Ogg</th>
+</tr>
+<tr>
+<td>Internet Explorer</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>NO<br>
+<strong>Update:</strong> Firefox 21 running on
+Windows 7, Windows 8, Windows Vista, and Android now supports MP4</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>YES</td>
+<td>NO</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>NO</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>MP4 = MPEG 4 files with H264 video codec and AAC audio codec</li>
+<li>WebM = WebM files with VP8 video codec and Vorbis audio
+codec</li>
+<li>Ogg = Ogg files with Theora video codec and Vorbis audio
+codec</li>
+</ul>
+<hr>
+<h2>MIME Types for Video Formats</h2>
+<table class="reference notranslate" id="table1">
+<tbody>
+<tr>
+<th style="width: 50%;">Format</th>
+<th style="width: 50%;">MIME-type</th>
+</tr>
+<tr>
+<td>MP4</td>
+<td>video/mp4</td>
+</tr>
+<tr>
+<td>WebM</td>
+<td>video/webm</td>
+</tr>
+<tr>
+<td>Ogg</td>
+<td>video/ogg</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr>
+<h2>HTML5 &lt;video&gt; - DOM Methods and Properties</h2>
+<p>HTML5 는 DOM 의 메서드, 속성 그리고 &lt;video&gt; 와
+&lt;audio&gt; 요소에 대한 이벤트가 있습니다.</p>
+<p>이러한 메서드, 속성 및 이벤트를 사용하면 JavaScript를 사용하여 &lt;video&gt;
+및 &lt;audio&gt; 요소를 조작 할 수 있습니다.</p>
+<p>재생(playing), 일시정지(pausing), 및 로드(loading)등의 메서드들과 (duration​​
+및 duration 등과 같은) properties 가 지원됩니다.&nbsp;&lt;video&gt;
+요소가 재생되거나, 일시정지, 및 종료가 되면 이를 통지해 주는 DOM 이벤트 있습니다.</p>
+<p>아래의 예에서 어떻게 &lt;video&gt; 요소의 속성을 읽고 설정하며, 메서드를 호출하는
+지를 간단한 방법으로 보여줍니다.</p>
+<div class="example">
+<h2 class="example">Example 1</h2>
+<p class="example">Create simple play/pause + resize
+controls for a video:</p>
+<div class="example_code notranslate"> <br>
+<div style="text-align: center;"> <button onclick="playPause()">Play/Pause</button> <button onclick="makeBig()">Big</button> <button onclick="makeSmall()">Small</button> <button onclick="makeNormal()">Normal</button> <br>
+<br>
+<video id="video1" width="480"> <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"><source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">Your
+browser does
+not support HTML5 video. </source> </source></video></div>
+<script> var myVideo=document.getElementById("video1"); function playPause()
+{ if (myVideo.paused) myVideo.play(); else myVideo.pause(); } function makeBig()
+{ myVideo.width=600; } function makeSmall()
+{ myVideo.width=320; } function makeNormal()
+{ myVideo.width=480; } </script>
+<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+</div>
+<p>The example above calls two methods: play() and pause(). It
+also uses two properties: paused and width.</p>
+<a class="tryitbtn" target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_js_prop">Try
+it yourself »</a> </div>
+<p>전체의 참고ㄴ느 여기로 ==&gt; <a href="http://www.w3schools.com/tags/ref_av_dom.asp">HTML5
+Audio/Video DOM Reference</a>.</p>
+<hr>
+<h2>HTML5 Video Tags</h2>
+<table class="reference notranslate">
+<tbody>
+<tr>
+<th style="width: 20%;">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_video.asp">&lt;video&gt;</a></td>
+<td>Defines a video or movie</td>
+</tr>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_source.asp">&lt;source&gt;</a></td>
+<td>Defines multiple media resources for media elements,
+such as &lt;video&gt; and &lt;audio&gt;</td>
+</tr>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_track.asp">&lt;track&gt;</a></td>
+<td>Defines text tracks in media players</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr><br>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="html5%20svg.html">« Previous</a></div>
+<div class="next"><a class="chapter" href="html5%20audio.html">Next Chapter »</a></div>
+</div>
+<hr> </div>
+</div>
+</div>
+<br>
+</div>
+<br>
+<hr style="height: 5px;">
+</body></html>

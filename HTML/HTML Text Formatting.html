@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Text Formatting</title>
+    <style>a.menu_html_formatting{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3855518-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> <script>
+<!--
+function searchfield_focus(obj)
+{
+obj.style.color=""
+obj.style.fontStyle=""
+if (obj.value=="Search w3schools.com")
+	{obj.value=""}
+}
+var addr=document.location.href;
+function displayError()
+{
+document.getElementById("err_url").value=addr;
+document.getElementById("err_form").style.display="block";
+document.getElementById("err_desc").focus();
+hideSent();
+}
+function hideError()
+{
+document.getElementById("err_form").style.display="none";
+}
+function hideSent()
+{
+document.getElementById("err_sent").style.display="none";
+}
+function sendErr()
+{
+var xmlhttp;
+var err_url=document.getElementById("err_url").value;
+var err_email=document.getElementById("err_email").value;
+var err_desc=document.getElementById("err_desc").value;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("POST","/err_sup.asp",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+hideError();
+document.getElementById("err_sent").style.display="block";
+}
+//-->
+</script> <script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script> <script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16833175/BottomMediumRectangle', [300, 250], 'div-gpt-ad-1383210480969-0').addService(googletag.pubads());
+googletag.defineSlot('/16833175/LargePS', [[723, 280], [723, 400]], 'div-gpt-ad-1383210480969-1').addService(googletag.pubads());
+googletag.defineSlot('/16833175/MainLeaderboard', [728, 90], 'div-gpt-ad-1383210480969-2').addService(googletag.pubads());
+googletag.defineSlot('/16833175/SmallPS', [723, 170], 'div-gpt-ad-1383210480969-3').addService(googletag.pubads());
+googletag.defineSlot('/16833175/WideSkyScraper', [160, 600], 'div-gpt-ad-1383210480969-4').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","html");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script> <script>
+  (function() {
+    var cx = '012971019331610648934:m2tou3_miwy';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script> <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>HTML <span class="color_h1"><strong>텍스트 서식</strong>(Formatting)
+                요소<br>
+              </span></h1>
+            <div class="chapter">
+              <div class="prev"><a class="chapter" href="html%20paragraphs.html">«
+                  Previous</a></div>
+              <div class="next"><a class="chapter" href="html%20links.html">Next
+                  Chapter »</a></div>
+            </div>
+            <hr> <br>
+            <div class="example">
+              <h2 class="example">Text Formatting</h2>
+              <div class="example_result notranslate" style="font-size:120%;"> <b>This
+                  text is bold</b><br>
+                <br>
+                <i>This text is italic</i><br>
+                <br>
+                <code>This is computer output</code><br>
+                <br>
+                This is<sub> subscript</sub> and <sup> superscript</sup><br>
+              </div>
+            </div>
+            <h2>HTML <strong>서식 요소</strong></h2>
+            <p>이전 장에서는 HTML 을 스타일링하는데 style 속성을 사용하는 방법을 배웠다.</p>
+            <p>HTML 에서는 텍스트에 특별한 의미를 부여하는 특별한 요소들이 있다.</p>
+            <p>HTML 에서는&nbsp; <strong>&lt;b&gt;</strong> 와 <strong>&lt;i&gt;</strong>
+              같은 태그를 사용하여 출력서식을 <b>굵게(bold)</b>또는 <span style="font-style: italic;">기
+                울임(italic) </span>꼴 텍스트로 한다.</p>
+            <p>포멧팅 요소들은 다음과 같이 텍스트를 특별한 타입으로 표시한다.: . </p>
+            <ul>
+              <li>굵은 텍스트(Bold text)</li>
+              <li>중요 텍스트(Important text)</li>
+              <li>기울임 꼴 텍스트(Italic text)</li>
+              <li>강조 텍스트(Emphasized text)</li>
+              <li>마크된 텍스트(Marked text)</li>
+              <li>작은(Small) text</li>
+              <li>삭제된(Deleted) text</li>
+              <li>삽입된(Inserted) text</li>
+              <li>아래첨자(Subscripts)</li>
+              <li>위첨자(Superscripts)</li>
+            </ul>
+            <hr>
+            <h2>HTML <span style="font-weight: bold;">굵고(bold) 강한(strong)</span>
+              서식</h2>
+            <p>HTML <span style="font-weight: bold;">&lt;b&gt;</span> 요소는 별 다른
+              강조 없이 <span style="font-weight: bold;">굵은(bold) </span>텍스트를
+              정의한다.&nbsp; <br>
+            </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh"> &lt;p&gt;This text
+                is normal.&lt;/p&gt;<br>
+                <br>
+                &lt;p&gt;&lt;b&gt;This text is bold&lt;/b&gt;.&lt;/p&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_b"
+                target="_blank">Try it Yourself »</a> </div>
+            HTML <span style="font-weight: bold;">&lt;strong&gt;</span> 요소는
+            "강한(strong)" 의미를 추가한 <span style="font-weight: bold;">강한</span>
+            텍스트를 정의한다.&nbsp; <br>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh"> &lt;p&gt;This text
+                is normal.&lt;/p&gt;<br>
+                <br>
+                &lt;p&gt;&lt;strong&gt;This text is
+                strong&lt;/strong&gt;.&lt;/p&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_strong"
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <hr>
+            <h2>HTML <span style="font-weight: normal;"><span style="font-style: italic;">기
+                  울임(italic)</span>과 </span><span style="font-weight: normal; font-style: italic;">강
+                조(emphasized)</span> 서식</h2>
+            <p>HTML <span style="font-weight: bold;">&lt;i&gt; </span>요소는 별 다른
+              강조 없이 <span style="font-style: italic;">기울임(italic)</span> 텍스트를
+              정의한다.&nbsp; <br>
+            </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh"> &lt;p&gt;This text
+                is normal.&lt;/p&gt;<br>
+                <br>
+                &lt;p&gt;&lt;i&gt;This text is italic&lt;/i&gt;.&lt;/p&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i"
+                target="_blank">Try it Yourself »</a> </div>
+            <p>HTML <span style="font-weight: bold;">&lt;em&gt; </span>요소는
+              "강조(emphasis)" 의미를 추가한, <span style="font-style: italic;">강조된
+                (emphasized) </span>텍스트를 정의한다.&nbsp; <br>
+            </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh"> &lt;p&gt;This text
+                is normal.&lt;/p&gt;<br>
+                <br>
+                &lt;p&gt;&lt;em&gt;This text is emphasized&lt;/em&gt;.&lt;/p&gt;</div>
+              <br>
+              <a class="tryitbtn" href="%3Cp%3EThis%20text%20is%20normal.%3C/p%3E%20%20%3Cp%3E%3Cem%3EThis%20text%20is%20emphasized%3C/em%3E.%3C/p%3E"
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <hr>
+            <h2>HTML <small>Small</small> 서식</h2>
+            <p>HTML<strong> &lt;small&gt; </strong>요소는 <strong>작은</strong>
+              텍스트를 정의한다.&nbsp; <br>
+            </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh"> &lt;h2&gt;HTML
+                &lt;small&gt;Small&lt;/small&gt; Formatting&lt;/h2&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_small"
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <hr>
+            <h2>HTML <mark>marked</mark> 서식<br>
+            </h2>
+            <p>HTML <strong>&lt;mark&gt;</strong> 요소는 <strong>표시된</strong>(<strong>marked</strong>)
+              또는 <strong>하일라이티드</strong>(<strong>highlighted</strong>)텍스트를
+              정의한다.&nbsp; <br>
+            </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh"> &lt;h2&gt;HTML
+                &lt;mark&gt;Marked&lt;/mark&gt; Formatting&lt;/h2&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_mark"
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <p> </p>
+            <hr>
+            <h2>HTML <del><span>Deleted</span></del> 서식<br>
+            </h2>
+            <p>HTML<strong> &lt;del&gt;</strong> 요소는 <strong>삭제된</strong> 또는 <strong>제
+                거된</strong> 텍스트를 정의한다.&nbsp; <br>
+            </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh"> &lt;p&gt;My
+                favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_del"
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <hr>
+            <h2>HTML <ins><span>Inserted</span></ins> 서식<br>
+            </h2>
+            <p>HTML <strong>&lt;ins&gt;</strong> 요소는 <strong>삽입된</strong> 또는 <strong>추
+                가된</strong> 텍스트를 정의한다.&nbsp; <br>
+            </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh"> &lt;p&gt;My
+                favorite &lt;ins&gt;color&lt;/ins&gt; is red.&lt;/p&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_ins"
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <hr>
+            <h2>HTML <sub><span style="font-weight: normal;">Subscript</span></sub>
+              서식<br>
+            </h2>
+            <p>HTML <strong>&lt;sub&gt; </strong>요소는 <strong>아래 첨자</strong>
+              텍스트를 정의한다.&nbsp; <br>
+            </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh">&lt;p&gt;This is
+                &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub"
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <hr>
+            <h2>HTML <span style="font-weight: normal;"><sup>Superscript</sup></span>
+              서식</h2>
+            <p>HTML <strong>&lt;sup&gt;</strong> 요소는 <strong>위 첨자 </strong>텍스
+              트를 정의한다.&nbsp; </p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate htmlHigh">&lt;p&gt;This is
+                &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;</div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sup"
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <hr>
+            <div class="tryit_ex"> <img src="http://www.w3schools.com/images/tryitimg.gif"
+                style="width:40px;height:46px" alt="Examples">
+              <h2>Try it Yourself - Examples</h2>
+            </div>
+            <p> <a class="tryitbtn" href="exercise.asp?filename=exercise_formatting1"
+                target="_blank"><font><font class="">Exercise 1» </font></font></a>&nbsp;&nbsp;&nbsp;
+              <a class="tryitbtn" href="exercise.asp?filename=exercise_formatting2"
+                target="_blank"><font><font class="">Exercise 2» </font></font></a>&nbsp;&nbsp;&nbsp;
+              <a class="tryitbtn" href="exercise.asp?filename=exercise_formatting3"
+                target="_blank"><font><font class="">Exercise 3» </font></font></a>&nbsp;&nbsp;&nbsp;
+              <a class="tryitbtn" href="exercise.asp?filename=exercise_formatting4"
+                target="_blank"><font><font class="">Exercise 4»</font></font></a>&nbsp;&nbsp;
+              </p>
+            <hr>
+            <h2>HTML 텍스트 서식 태그</h2>
+            <table class="reference notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Tag</th>
+                  <th>설명</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_b.asp">&lt;b&gt;</a></td>
+                  <td>굵은 텍스트 정의 </td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_em.asp">&lt;em&gt;</a></td>
+                  <td>강조된 텍스트 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_i.asp">&lt;i&gt;</a></td>
+                  <td>기울임 꼴 텍스트 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_small.asp">&lt;small&gt;</a></td>
+                  <td>더 작은 텍스트 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_strong.asp">&lt;strong&gt;</a></td>
+                  <td>중요한 텍스트 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_sub.asp">&lt;sub&gt;</a></td>
+                  <td>아래 첨자 텍스트 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_sup.asp">&lt;sup&gt;</a></td>
+                  <td>윗 첨자 텍스트 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_ins.asp">&lt;ins&gt;</a></td>
+                  <td> 첨가 텍스트 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_del.asp">&lt;del&gt;</a></td>
+                  <td>지운 텍스트 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_mark.asp">&lt;mark&gt;</a></td>
+                  <td>마킹 / 강조된 텍스트 정의</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2><a href="http://www.w3schools.com/html/html_computercode_elements.asp">HTML
+                <strong>"컴퓨터 출력" 태그</strong></a></h2>
+            <table class="reference notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><strong><a href="http://www.w3schools.com/tags/tag_code.asp">&lt;code&gt;</a></strong></td>
+                  <td>Defines computer code text</td>
+                </tr>
+                <tr>
+                  <td><strong><a href="http://www.w3schools.com/tags/tag_kbd.asp">&lt;kbd&gt;</a></strong></td>
+                  <td>Defines keyboard text&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_samp.asp">&lt;samp&gt;</a></td>
+                  <td>Defines sample computer code</td>
+                </tr>
+                <tr>
+                  <td><strong><a href="http://www.w3schools.com/tags/tag_var.asp">&lt;var&gt;</a></strong></td>
+                  <td>Defines a variable</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2><a href="http://www.w3schools.com/html/html_quotation_elements.asp">HTML
+                <strong>인용, 인용문, </strong>그리고<strong> 정의 태그</strong></a></h2>
+            <table class="reference notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_abbr.asp">&lt;abbr&gt;</a></td>
+                  <td>약어(abbreviation) 및 머리 글자(acronym)를 정의 </td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_address.asp">&lt;address&gt;</a></td>
+                  <td>문서의 작성자 / 소유자에 대한 연락처 정보를 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_bdo.asp">&lt;bdo&gt;</a></td>
+                  <td>Defines the text direction</td>
+                </tr>
+                <tr>
+                  <td><strong><a href="http://www.w3schools.com/tags/tag_blockquote.asp">&lt;blockquote&gt;</a></strong></td>
+                  <td> 다른 소스에서 인용되는 부분을 정의</td>
+                </tr>
+                <tr>
+                  <td><strong><a href="http://www.w3schools.com/tags/tag_q.asp">&lt;q&gt;</a></strong></td>
+                  <td>인라인 (짧은) 인용을 정의</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/tags/tag_cite.asp">&lt;cite&gt;</a></td>
+                  <td>작품의 제목을 정의합니다</td>
+                </tr>
+                <tr>
+                  <td><strong><a href="http://www.w3schools.com/tags/tag_dfn.asp">&lt;dfn&gt;</a></strong></td>
+                  <td>정의 용어(definition term) 정의</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>&nbsp;</p>
+            <div class="chapter">
+              <div class="prev"><a class="chapter" href="html%20paragraphs.html">«
+                  Previous</a></div>
+              <div class="next"><a class="chapter" href="html%20links.html">Next
+                  Chapter »</a></div>
+            </div>
+            <hr> </div>
+        </div>
+        <br>
+      </div>
+      <br>
+      <hr style="height:5px;"> </div>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML5 Audio</title>
+    <style>a.menu_html5_audio{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav">
+      <div id="page">
+        <div><br>
+          <div id="main">
+            <h1>HTML5 <span class="color_h1"><strong>오디오</strong>(Audio)</span></h1>
+            <div class="chapter">
+              <div class="prev"><a class="chapter" href="html5_video.asp">«
+                  Previous</a></div>
+              <div class="next"><a class="chapter" href="html5_geolocation.asp">Next
+                  Chapter »</a></div>
+            </div>
+            <hr>
+            <p class="intro">HTML5 는 오디오 파일을 재생하기 위한 표준을 제공합니다</p>
+            <hr>
+            <h2>Audio on the Web</h2>
+            <p> HTML5 이전에는 웹 페이지에서 오디오 파일을 재생하기위한 표준이 없었다..</p>
+            <p> HTML5 이전에는 오디오 파일을 플러그인(플래시 같은)으로 재생했으나, 서로 다른 브라우저는 서로 다른 플러그인을 지원했었다.</p>
+            <p>HTML5 는 웹 페이지에 오디오 파일을 포함하는 표준 방식을 지정하는 새로운 요소를 정의한다:  &lt;audio&gt; 요소.</p>
+            <hr>
+            <h2>HTML5 Audio - How It Works</h2>
+            <p>HTML5 에서 오디오 파일을 재생하려면 다음과 같이 한다:</p>
+            <div class="example">
+              <h2 class="example">Example</h2>
+              <div class="example_code notranslate"> &lt;audio controls&gt;<br>
+                &nbsp; &lt;source src="horse.ogg" type="audio/ogg"&gt;<br>
+                &nbsp; &lt;source src="horse.mp3" type="audio/mpeg"&gt;<br>
+                Your browser does not support the audio element.<br>
+                &lt;/audio&gt; </div>
+              <br>
+              <a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all"
+                target="_blank">Try
+                it yourself »</a> </div>
+            <p> control 속성은 재생, 일시 정지, 볼륨과 같은 오디오 컨트롤을 추가합니다.</p>
+            <p>또한 &lt;audio&gt; 요소를 지원하지 않는 브라우저를 위해서 &lt;audio&gt; 및  &lt;/audio&gt; 태그 사이에 텍스트 내용을 삽입합니다.</p>
+            <p>&lt;audio&gt; 요소에는 여러 &lt;source&gt;  요소가 올 수 있으며, &lt;source&gt; 요소는 서로 다른 오디오 파일에 링크 할 수 있습니다. 브라우저는 처음 으로 인식된 형식을 사용합니다.</p>
+            <hr>
+            <h2>Audio Formats and Browser Support</h2>
+            <p>현재, 
+              &lt;audio&gt; 요소에서 지원되는 3 파일 형식: MP3, Wav, 과 Ogg:</p>
+            <table class="reference notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:25%">Browser</th>
+                  <th style="width:25%">MP3</th>
+                  <th style="width:25%">Wav</th>
+                  <th style="width:25%">Ogg</th>
+                </tr>
+                <tr>
+                  <td>Internet Explorer</td>
+                  <td>YES</td>
+                  <td>NO</td>
+                  <td>NO</td>
+                </tr>
+                <tr>
+                  <td>Chrome</td>
+                  <td>YES</td>
+                  <td>YES</td>
+                  <td>YES</td>
+                </tr>
+                <tr>
+                  <td>Firefox</td>
+                  <td>NO<br>
+                    <strong>Update:</strong> Firefox 21 running on Windows 7,
+                    Windows 8, Windows Vista, and Android now supports MP3</td>
+                  <td>YES</td>
+                  <td>YES</td>
+                </tr>
+                <tr>
+                  <td>Safari</td>
+                  <td>YES</td>
+                  <td>YES</td>
+                  <td>NO</td>
+                </tr>
+                <tr>
+                  <td>Opera</td>
+                  <td>NO</td>
+                  <td>YES</td>
+                  <td>YES</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2>MIME Types for Audio Formats</h2>
+            <table class="reference notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:50%">Format</th>
+                  <th style="width:50%">MIME-type</th>
+                </tr>
+                <tr>
+                  <td>MP3</td>
+                  <td>audio/mpeg</td>
+                </tr>
+                <tr>
+                  <td>Ogg</td>
+                  <td>audio/ogg</td>
+                </tr>
+                <tr>
+                  <td>Wav</td>
+                  <td>audio/wav</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2>HTML5 Audio Tags</h2>
+            <table class="reference notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:150px">Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_audio.asp">&lt;audio&gt;</a></td>
+                  <td>Defines sound content</td>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_source.asp">&lt;source&gt;</a></td>
+                  <td>Defines multiple media resources for media elements, such
+                    as &lt;video&gt; and &lt;audio&gt;</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <br>
+    <hr style="height:5px;">
+  </body>
+</html>

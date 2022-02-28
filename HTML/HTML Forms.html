@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Forms</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>HTML <span class="color_h1">Forms</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Entities.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20input%20Elements.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <h2>&lt;form&gt; Element</h2>
+            <p>HTML <strong>form</strong> 들은 <strong>사용자 입력을 수집</strong>하여
+              서버에 전달하는데 사용됩니다.</p>
+            <p><strong>&lt;form&gt;</strong> 요소로 HTML form 을 정의한다:</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">form</span><span class="highGT">&gt;</span><br>
+                .<br>
+                <i>form elements</i><br>
+                .<br>
+                <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+                  class="highGT">&gt;</span><br>
+              </div>
+            </div>
+            <p>HTML forms <strong>은 form 요소</strong>들을 담는다.&nbsp;</p>
+            <p>form 요소들은 다양한 타입의 입력(input) 요소와,&nbsp; 체크 박스(checkbox),
+              라디오(radio) 버튼, 제출(submit) 버튼 등과 같은 것들이다.&nbsp;</p>
+            <hr>
+            <h2>&lt;input&gt; Element</h2>
+            <p><strong>&lt;input&gt; </strong>요소는 가장 중요한 form 요소이다. </p>
+            <p><strong>&lt;input&gt; </strong>요소는 <strong>type 속성</strong>에 따라
+              여러 가지로 변화 될 수 있으며, 이 장에서는 간단히 다음과 같은 type 들을 사용해본다.: </p>
+            <p> </p>
+            <table class="w3-table-all">
+              <tbody>
+                <tr>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><strong>text</strong></td>
+                  <td>Defines normal text input</td>
+                </tr>
+                <tr>
+                  <td><strong>radio</strong></td>
+                  <td>Defines radio button input (for selecting one of many
+                    choices)</td>
+                </tr>
+                <tr>
+                  <td><strong>submit</strong></td>
+                  <td>Defines a submit button (for submitting the form)</td>
+                </tr>
+              </tbody>
+            </table>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp; You will learn a lot more about input types later
+                    in this tutorial.&nbsp; </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>Text Input</h2>
+            <p><strong>&lt;input type="text"&gt;</strong> 사용자가 텍스트 입력(<strong>text
+                input</strong>)을 할 수 있는 한 줄의 입력 필드를 정의한다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">form</span><span class="highGT">&gt;</span><br>
+                &nbsp; First name:<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                <span class="highATT">name=</span><span class="highVAL">"firstname"</span><span
+
+                  class="highGT">&gt;</span><span class="highLT">&lt;</span><span
+
+                  class="highELE">br</span><span class="highGT">&gt;</span><br>
+                &nbsp; Last name:<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                <span class="highATT">name=</span><span class="highVAL">"lastname"</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_text"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다:</p>
+            <p> First name:<br>
+              <input type="text"><br>
+              Last name:<br>
+              <input type="text"> </p>
+            <p><b>Note:</b> 폼 자체가 표시되지는 않습니다.&nbsp;또한 텍스트 필드의 <strong>기 본 너비</strong>는&nbsp;
+              <strong>20</strong>자 입니다.</p>
+            <hr>
+            <h2>Radio Button Input</h2>
+            <p><strong>&lt;input type="radio"&gt;</strong> 는 라디오 버튼(<strong>radio
+                button</strong>)을 정의합니다. </p>
+            <p>라디오 버튼은 사용자가 제한된 개수의 선택 중 <strong>하나만 선택</strong>할 수 있습니다 : </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> &lt;form&gt;<br>&nbsp; &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; 
+  value=&quot;male&quot;&gt;<br>&nbsp; &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input 
+  type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;<br>&nbsp; &lt;label 
+  for=&quot;female&quot;&gt;Female&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;radio&quot; id=&quot;other&quot; 
+  name=&quot;gender&quot; value=&quot;other&quot;&gt;<br>&nbsp; &lt;label for=&quot;other&quot;&gt;Other&lt;/label&gt;<br>&lt;/form&gt;</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_radio"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다:</p>
+            <p> <form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form></p>
+
+<hr>
+<h2> &lt;label&gt; 요소 </h2>
+<p>위 예에서 label 요소의 사용을 주목하시오. </p>
+<p>label 요소는 매우 작은 영역 (예 : radio button 또는 checkbox)을 클릭하기 어려운 사용자에게 도움이 됩니다. 레이블 요소 내의 텍스트를 클릭하면 라디오 단추 / 확인란이 토글되기 때문입니다.</p>
+<p>label 태그의 for 속성은 입력 요소의 id 속성과 같아야합니다. </p>
+
+
+
+
+            <hr>
+            <h2>Submit Button</h2>
+            <p><strong>&lt;input type="submit"&gt;</strong> 는 <strong>폼 -헨들러
+                (form- handler)</strong>에게 폼을 <strong>제출</strong>하 는 버튼을 정의합니다.
+            </p>
+            <p>폼-헨들러(form-handler)는 일반적으로 입력 자료를 처리할<strong> 스크립트로 이루어진 서버페이지</strong>이
+              다. </p>
+            <p>폼-헨들러(form-handler)는 폼의 <strong>action 속성</strong>에 명시되며 일반적으로
+              수신된 입력을 가지고 무언가를 수행합니다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">form</span> <span class="highATT">action=</span><span
+
+                  class="highVAL">"action_page.php"</span><span class="highGT">&gt;</span><br>
+                &nbsp; First name:<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                <span class="highATT">name=</span><span class="highVAL">"firstname"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Mickey"</span><span
+
+                  class="highGT">&gt;</span><span class="highLT">&lt;</span><span
+
+                  class="highELE">br</span><span class="highGT">&gt;</span><br>
+                &nbsp; Last name:<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                <span class="highATT">name=</span><span class="highVAL">"lastname"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Mouse"</span><span
+
+                  class="highGT">&gt;</span><span class="highLT">&lt;</span><span
+
+                  class="highELE">br</span><span class="highGT">&gt;</span><span
+
+                  class="highLT">&lt;</span><span class="highELE">br</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"submit"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Submit"</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다:</p>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank"> First name:<br>
+              <input name="firstname" value="Mickey" type="text"> <br>
+              Last name:<br>
+              <input name="lastname" value="Mouse" type="text"> <br>
+              <br>
+              <input value="Submit" type="submit"> </form>
+            <hr>
+            <h2>Action 속성</h2>
+            <p><strong>action 속성</strong>은 폼이 제출될 때 수행할 행동을 정의 합니다.&nbsp;</p>
+            <p>서버에 폼을 제출하는 일반적인 방법은 submit&nbsp; 버튼을 사용하는 것이다.</p>
+            <p>일반적으로, 폼은 <strong>웹서버</strong>에 있는 <strong>웹페이지</strong>에 제출된다.
+            </p>
+            <p>위의 예에서, 제출된 폼을 처리할 서버측 스크립트(server-side script)가 지정되어있다. :</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+class="highELE">form</span> <span class="highATT"><strong>action=</strong></span><strong><span
+
+class="highVAL">"action_page.php</span></strong>"<span class="highGT">&gt;</span><br>
+              </div>
+            </div>
+            <p>만약 action 속성이 생략되어 있으면, action 은 현재 페이지로 설정된다.&nbsp;</p>
+            <hr>
+            <h2>Method 속성</h2>
+            <p><strong>method 속성은 폼을 제출할 때 사용될 </strong>HTTP method (<strong>GET</strong>
+              or <strong>POST</strong>)를 지정한다. :</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+class="highELE">form</span> <span class="highATT">action=</span><span class="highVAL">"action_page.php"</span> <span
+
+class="highATT"><strong>method=</strong></span><strong><span class="highVAL">"get"</span><span
+
+class="highATT"></span></strong><span class="highGT">&gt;</span></div>
+            </div>
+            <p>or:</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+class="highELE">form</span> <span class="highATT">action=</span><span class="highVAL">"action_page.php"</span> <span
+
+class="highATT"><strong>method=</strong></span><strong><span class="highVAL">"post"</span><span
+
+class="highATT"></span></strong><span class="highGT">&gt;</span></div>
+            </div>
+            <hr>
+            <h2>When to Use GET?</h2>
+            <p>다음과 같은 경우 GET (the default method)을 사용할 수 있다.:</p>
+            <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 폼 제출이 수동적(like a search
+              engine query)이고, 민감한 정보가 없는 경우.</p>
+            GET을 사용하면, 폼(form) 자료가 페이지 주소 부분에 표시될 것이다. :
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh">
+                action_page.php?firstname=Mickey&amp;lastname=Mouse</div>
+            </div>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp; GET 은 짧은 데이타에 적합하며, 크기 제한은 브라우져에 설정되어 있다.&nbsp; </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>When to Use POST?</h2>
+            <p>다음과 같은 경우 POST를 사용해야 한다.:</p>
+            <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 폼이 데이타를 업데이트하거나, 민감한
+              정보(password)를 포함하는 경우.</p>
+            <p>POST 는 제출된 데이타가 페이지 주소에 보여지지 않아 더 나은 보안성을 제공해준다.&nbsp;</p>
+            <hr>
+            <h2>Name 속성</h2>
+            <p> 제대로 제출 되려면, 각 입력 필드에 name&nbsp; 속성이 있어야 한다.</p>
+            <p> 다음의 예는 "Last name" input 필드만 제출된다. : </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+class="highELE">form</span> <span class="highATT">action=</span><span class="highVAL">"action_page.php"</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp; First name:<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Mickey"</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp; Last name:<span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                <span class="highATT">name=</span><span class="highVAL">"lastname"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Mouse"</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"submit"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Submit"</span><span
+
+class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit_id"
+
+target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>&lt;fieldset&gt; 로 폼데이타 그룹화</h2>
+            <p><strong>&lt;fieldset&gt;</strong> 요소는 관련된 데이타들은 하나의 폼으로 그룹화 한다. </p>
+            <p><strong>&lt;legend&gt;</strong> 요소는 &lt;fieldset&gt; 요소의 켑션을
+              정의한다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+class="highELE">form</span> <span class="highATT">action=</span><span class="highVAL">"action_page.php"</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">fieldset</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">legend</span><span
+
+class="highGT">&gt;</span>Personal information:<span class="highLT">&lt;</span><span
+
+class="highELE">/legend</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; First name:<span class="highLT">&lt;</span><span
+
+class="highELE">br</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                <span class="highATT">name=</span><span class="highVAL">"firstname"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Mickey"</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; Last name:<span class="highLT">&lt;</span><span
+
+class="highELE">br</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"text"</span>
+                <span class="highATT">name=</span><span class="highVAL">"lastname"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Mouse"</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><span class="highLT">&lt;</span><span class="highELE">br</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">input</span>
+                <span class="highATT">type=</span><span class="highVAL">"submit"</span>
+                <span class="highATT">value=</span><span class="highVAL">"Submit"</span><span
+
+class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/fieldset</span><span
+
+class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_legend"
+
+target="_blank">Try it Yourself »</a> </div>
+            <p>위의 HTML 코드는 브라우저에서 다음과 같이 보여집니다:</p>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+              <fieldset> <legend>Personal information:</legend> First name:<br>
+                <input name="firstname" value="Mickey" type="text"> <br>
+                Last name:<br>
+                <input name="lastname" value="Mouse" type="text"> <br>
+                <br>
+                <input value="Submit" type="submit"> </fieldset>
+            </form>
+            <hr>
+            <h2>HTML Form 속성들</h2>
+            <p>HTML &lt;form&gt; 요소는 모든 가능한 속성들으 설정과 함께 다음과 같이 보여질 것이다.:</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+class="highELE"> form</span> <span class="highATT">action=</span><span class="highVAL">"action_page.php"</span> <span
+
+class="highATT">method=</span><span class="highVAL">"post"</span> <span class="highATT">target=</span><span
+
+class="highVAL">"_blank"</span> <span class="highATT">accept-charset=</span><span
+
+class="highVAL">"UTF-8"</span><span class="highATT"><br>
+                  enctype=</span><span class="highVAL">"application/x-www-form-urlencoded"</span>
+                <span class="highATT">autocomplete=</span><span class="highVAL">"off"</span>
+                <span class="highATT">novalidate</span><span class="highGT">&gt;</span><br>
+                .<br>
+                <i>form elements</i><br>
+                .<br>
+                <span class="highLT">&lt;</span><span class="highELE">/form</span><span
+
+class="highGT">&gt;</span> </div>
+            </div>
+            <p>Here is the list of &lt;form&gt; attributes:</p>
+            <table class="w3-table-all">
+              <tbody>
+                <tr>
+                  <th>Attribute</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>accept-charset</td>
+                  <td>Specifies the charset used in the submitted form (default:
+                    the page charset).</td>
+                </tr>
+                <tr>
+                  <td><strong>action</strong></td>
+                  <td>양식을 제출할 주소(URL)를 지정합니다. (기본 : 제출 페이지).</td>
+                </tr>
+                <tr>
+                  <td>autocomplete</td>
+                  <td>Specifies if the browser should autocomplete the form
+                    (default: on).</td>
+                </tr>
+                <tr>
+                  <td>enctype</td>
+                  <td>Specifies the encoding of the submitted data (default: is
+                    url-encoded).</td>
+                </tr>
+                <tr>
+                  <td><strong>method</strong></td>
+                  <td>양식을 제출할 때 사용되는 HTTP 메소드를 지정합니다. (기본값: GET).</td>
+                </tr>
+                <tr>
+                  <td>name</td>
+                  <td style="height: 21.4333px;">Specifies a name used to
+                    identify the form (for DOM usage: document.forms.name).</td>
+                </tr>
+                <tr>
+                  <td>novalidate</td>
+                  <td>Specifies that the browser should not validate the form.</td>
+                </tr>
+                <tr>
+                  <td>target</td>
+                  <td>Specifies the target of the address in the action
+                    attribute (default: _self).</td>
+                </tr>
+              </tbody>
+            </table>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp; You will learn more about attributes in the next
+                    chapters. </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>More Examples</h2>
+            <p>
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms1"
+
+target="_blank">Exercise 1 »</a>&nbsp;&nbsp;
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms2"
+
+target="_blank">Exercise 2 »</a>&nbsp;&nbsp;
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms3"
+
+target="_blank">Exercise 3 »</a>&nbsp;&nbsp;
+              <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms4"
+
+target="_blank">Exercise 4 »</a>
+            </p>
+            <br>
+            <hr>
+            <div class="chapter">
+                                         <div class="w3-clear nextprev"> <a class="w3-left w3-btn"
+
+href="HTML%20Entities.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20input%20Elements.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <br>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+</body></html>

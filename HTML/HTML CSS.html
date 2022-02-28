@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Styles - CSS</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto;">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px;">
+        <div>
+          <div id="main" style="width:auto;">
+            <h1>HTML <span class="color_h1">Styles - CSS</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Lists.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Block%20Elements.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <div style="position:relative;height:220px;margin-top:50px;">
+              <div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF">
+              </div>
+              <div style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:170px;background-color:#8AC007">
+              </div>
+              <div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+                <h1>CSS = Styles and Colors</h1>
+                <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:10px;">Manipulate
+                  Text</div>
+                <div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:20px;">Colors,
+                  <span style="background-color:#B4009E;color:#ffffff;">&nbsp;Boxes</span></div>
+              </div>
+            </div>
+            <hr>
+            <div class="w3-example">
+              <h2>Example</h2>
+              <div class="w3-code notranslate htmlHigh"> &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                <br>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                &nbsp; body {background-color:lightgray}<br>
+                &nbsp; h1&nbsp;&nbsp; {color:blue}<br>
+                &nbsp; p&nbsp;&nbsp;&nbsp; {color:green}<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                <br>
+                &lt;body&gt;<br>
+                &nbsp; &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                &nbsp; &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                <br>
+                &lt;/html&gt;</div>
+              <br>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_internal"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>Styling HTML with CSS</h2>
+            <p>CSS 는 <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets
+              을 의미한다.</p>
+            <p>HTML 요소들에 스타일을 적용하는 방법이 3가지 있다:</p>
+            <ul>
+              <li><strong>인라인(Inline)</strong> - HTML 요소 안의 style<strong> 속성</strong>을
+                사용</li>
+              <li><strong>내부(</strong><strong>Internal)</strong> - &lt;head&gt;
+                섹션 안의 &lt;style&gt;<strong> 요소</strong>를 사용</li>
+              <li><strong>외부(</strong><strong>External)</strong> - 외부의 CSS<strong>
+                  파일</strong>을 사용</li>
+            </ul>
+            <p>HTML에 CSS를 추가하는 가장 일반적인 방법은, <strong>외부</strong>의 별도 CSS 파일에 CSS
+              문법을 넣는 것이다. 하지만, 이 HTML 튜토리얼에서는 내부(internal) 스타일링을 사용한다. 이는 설명하기
+              쉽고, 직접 실험을 쉽게 할 수 있게 해 주기 때문이다. </p>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td> You can learn much more about CSS in our <a href="http://jun.hansung.ac.kr/CWP/css/CSS%20Introduction.html">CSS
+                      Tutorial</a>.</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>CSS 문법</h2>
+            <p><strong>CSS 스타일링</strong>은 다음의 <strong>문법</strong>을 따른다:</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <em>element</em> {<em>
+                  property</em>:<em>value ; property:value }</em> </div>
+            </div>
+            <p><strong>element</strong> 는 HTML element name.&nbsp; <em><strong>property</strong></em>
+              는 CSS property. <em><strong>value</strong></em> 는 CSS value.</p>
+            <p>다수의 styles 들은 semicolon으로 분리된다.</p>
+            <hr>
+            <h2>인라인(Inline) Styling (Inline CSS)</h2>
+            <p> 인라인 스타일링(<strong>Inline styling</strong>)은 하나의 HTML 요소에 독특한 스타일을
+              적용 할 경우 유용하다.</p>
+            <p> 인라인 스타일링은 <strong>style 속성</strong>을 사용합니다. </p>
+            <p>아래의 예는 하나의 제목의 텍스트 색상을 변경한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">h1</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"color:blue;"</span><span class="highGT">&gt;</span>This
+                is a Blue Heading<span class="highLT">&lt;</span><span class="highELE">/h1</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_inline"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>내부(Internal) Styling (내부 CSS)</h2>
+            <p>단 <strong>하나의 페이지에 공통의 스타일</strong>을 정의 하려면 <strong>내부(</strong><strong>internal)
+                스타일 시트</strong>를 사용할 수 있다. </p>
+            <p>내부 스타일링(<strong>Internal styling</strong>)은 HTML 페이지의<strong>
+                &lt;head&gt;</strong> 섹션 안에 다음과 같이 <strong>&lt;style&gt;</strong>
+              태그를 사용하여 정의된다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">style</span><span
+
+                  class="highGT">&gt;</span><br>
+                body {background-color:lightgrey;}<br>
+                h1&nbsp;&nbsp; {color:blue;}<br>
+                p&nbsp;&nbsp;&nbsp; {color:green;}<br>
+                <span class="highLT">&lt;</span><span class="highELE">/style</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">h1</span><span
+
+                  class="highGT">&gt;</span>This is a heading<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h1</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>This is a paragraph.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_internal"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>External Styling (External CSS)</h2>
+            <p>스타일을 많은 페이지에 적용할 때 <strong>외부 스타일 시트(</strong><strong>External
+                style sheet)가 </strong>이상적이다. <strong><br>
+              </strong></p>
+            <p><strong>외부 스타일 시트</strong>를 사용하면 하나의 파일을 변경하여 전체 웹 사이트의 모양을 변경할 수
+              있습니다.</p>
+            <p>외부 스타일(<strong>External styles</strong>)은 페이지의 <strong>&lt;head&gt;
+                </strong>섹션 안에 <strong>&lt;link&gt; </strong>요소로 정의된다. <strong></strong>:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">head</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">link</span>
+                <span class="highATT">rel=</span><span class="highVAL">"stylesheet"</span>
+                <span class="highATT">href=</span><span class="highVAL">"styles.css"</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">h1</span><span
+
+                  class="highGT">&gt;</span>This is a heading<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h1</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>This is a paragraph.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>CSS Fonts</h2>
+            <p>CSS property <strong>color</strong> 는 HTML 요소에 사용될 텍스트 컬러를
+              정의한다.&nbsp;</p>
+            <p>CSS property <strong>font-family</strong> 는 HTML 요소에 사용될 폰트를
+              정의한다.&nbsp;</p>
+            <p>CSS property <strong>font-size</strong> 는 HTML 요소에 사용될 텍스트 크기를
+              정의한다.&nbsp;</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">style</span><span
+
+                  class="highGT">&gt;</span><br>
+                h1 {<br>
+                &nbsp;&nbsp;&nbsp; color: blue;<br>
+                &nbsp;&nbsp;&nbsp; font-family: verdana;<br>
+                &nbsp;&nbsp;&nbsp; font-size: 300%;<br>
+                }<br>
+                p&nbsp; {<br>
+                &nbsp;&nbsp;&nbsp; color: red;<br>
+                &nbsp;&nbsp;&nbsp; font-family: courier;<br>
+                &nbsp;&nbsp;&nbsp; font-size: 160%;<br>
+                }<br>
+                <span class="highLT">&lt;</span><span class="highELE">/style</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">h1</span><span
+
+                  class="highGT">&gt;</span>This is a heading<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h1</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>This is a paragraph.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_fonts"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp;&nbsp; HTML 의 옛 버전에서 지원되던 &lt;font&gt; 태그는 HTML5에서는
+                    유효하지 않다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>The CSS Box Model</h2>
+            <p>모든 시각적 HTML element 는 보이지 않을 지라도 주위를 박스가 감싼다.&nbsp;</p>
+            <p>CSS <strong>border</strong> property 는 HTML 요소 주위의 보이는 테두리를
+              정의한다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  1px solid black;</span><br>
+                }<br>
+              </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_borders"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p>CSS <strong>padding</strong> property 는 테두리 내부의 패딩(공간)을 정의한다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  1px solid black;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  10px;</span><br>
+                }</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_padding"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p>CSS <strong>margin</strong> property 은 테두리 바깥의 여백(공간)을 정의 한다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  1px solid black;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  10px;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">margin:</span><span class="highVAL">
+                  30px;</span><br>
+                }</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_margin"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp;위의 CSS 예재는 크기를 pixel 로 정의 하는데 px 를 사용한다.&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>id 속성</h2>
+            <p>위의 모든 예재는 일반적인 방법으로 HTML 요소를 스타일하는 CSS 를 사용하였다.</p>
+            <p>CSS styles 은 모든 동일한 요소에 대한 동일한 스타일을 정의 한다.&nbsp;</p>
+            <p>특별한 요소에 특별한 스타일을 정의 하려면, 그 요소에 id 속성을 추가 한다.:</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">p</span> <span class="highATT">id=</span><span
+
+                  class="highVAL">"p01"</span><span class="highGT">&gt;</span>I
+                am different<span class="highLT">&lt;</span><span class="highELE">/p</span><span
+
+                  class="highGT">&gt;</span> </div>
+            </div>
+            <p>그 다음, 해당 요소에 대한 다른 스타일을 정의 한다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">#p01
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  blue;</span><br>
+                }</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_id"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>class 속성</h2>
+            <p>요소의 특별한 타입(클래스:class)에 스타일을 정의 하려면, 그 요소에 class 속성을 추가한다.:</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">p</span> <span class="highATT">class=</span><span
+
+                  class="highVAL">"error"</span><span class="highGT">&gt;</span>I
+                am different<span class="highLT">&lt;</span><span class="highELE">/p</span><span
+
+                  class="highGT">&gt;</span> </div>
+            </div>
+            <p>이제, 이 타입(클래스:class)의 요소의 다른 스타일을 정의할 수 있다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p.error
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                }</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_class"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp; 단일 요소를 언급할 때&nbsp;<strong>id</strong> 를 사용하고, 요소의
+                    그룹을 언급하고자 할때&nbsp;<strong>class</strong> 를 사용한다.&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>사용되지 않는(Deprecated) Tags 와 Attributes in HTML5</h2>
+            <p>In older HTML versions, several tags and attributes were used to
+              style documents.</p>
+            <p>These tags are not supported in HTML5.</p>
+            <p>Avoid using the <strong>elements</strong>: &lt;font&gt;,
+              &lt;center&gt; and &lt;strike&gt;.</p>
+            <p>Avoid using the <strong>attributes</strong>: color and bgcolor.</p>
+            <hr>
+            <h2>Chapter Summary</h2>
+            <ul>
+              <li>Use the HTML <strong>style</strong> attribute for inline
+                styling</li>
+              <li>Use the HTML <strong>&lt;style&gt;</strong> element to define
+                internal CSS</li>
+              <li>Use the HTML <strong>&lt;link&gt;</strong> element to define
+                external CSS</li>
+              <li>Use the HTML <strong>&lt;head&gt;</strong> element to store
+                &lt;style&gt; and &lt;link&gt; elements</li>
+              <li>Use the CSS <strong>color</strong> property for text colors</li>
+              <li>Use the CSS <strong>font-family</strong> property for text
+                fonts</li>
+              <li>Use the CSS <strong>font-size</strong> property for text
+                sizes</li>
+              <li>Use the CSS <strong>border</strong> property for visible
+                element borders</li>
+              <li>Use the CSS <strong>padding</strong> property for space
+                inside the border</li>
+              <li>Use the CSS <strong>margin</strong> property for space
+                outside the border</li>
+            </ul>
+            <hr>
+            <h2>Test Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_css1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_css2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_css3"
+
+                target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_css4"
+
+                target="_blank">Exercise 4 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_css5"
+
+                target="_blank">Exercise 5 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_css6"
+
+                target="_blank">Exercise 6 »</a> </p>
+            <hr>
+            <h2>HTML Style Tags</h2>
+            <table class="w3-table-all  notranslate">
+              <tbody>
+                <tr>
+                  <th>Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_style.asp">&lt;style&gt;</a></td>
+                  <td>Defines style information for a document</td>
+                </tr>
+                <tr>
+                  <td><a href="/tags/tag_link.asp">&lt;link&gt;</a></td>
+                  <td>Defines a link between a document and an external resource
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Lists.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="HTML%20Block%20Elements.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>

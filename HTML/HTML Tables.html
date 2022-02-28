@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Tables</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css"></head>
+  <body>
+    <div id="belowTopnav" style="width:auto;">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px;">
+        <div>
+          <div id="main" style="width:auto;">
+            <h1>HTML <span class="color_h1">Tables</span></h1>
+            <div class="chapter">
+               <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Images.html">«
+                    Previous</a> <a class="w3-right w3-btn" href="HTML%20Lists.html">Next
+                    Chapter »</a> </div>
+            </div>
+            <hr>
+            <h2>HTML Table Example</h2>
+            <table class="w3-table-all" style="width:100%">
+              <tbody>
+                <tr>
+                  <th>Number</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Points</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>HTML Tables 정의</h2>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">table</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"width:100%"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; &nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Jill<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Smith<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>50<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Eve<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Jackson<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>94<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/table</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>Example 설명:</p>
+            <p>표는 <strong>&lt;table&gt;</strong> 태그로 정의된다.</p>
+            <p>표는 <strong>&lt;tr&gt;</strong> 태그로 정의되는 테이블 <strong>행(table
+                row)</strong>으로 나누어진다. (<strong>tr</strong> 은 <strong>t</strong>able
+              <strong>r</strong>ow 를 의미한다)</p>
+            <p>테이블 행<strong>(table row)</strong>은 <strong>&lt;td&gt;</strong>
+              태그에 의해 <strong>테이블 데이터</strong>로 나누어진다. (<strong>td</strong> 는 <strong>t</strong>able
+              <strong>d</strong>ata 를 의미한다)</p>
+            <p>또한, 행은 <strong>&lt;th&gt;</strong> 태그에 의해 <strong>제목</strong>들
+              로 나누어질 수 도 있다. (<strong>th</strong> 는 <strong>t</strong>able <strong>h</strong>eading
+              을 의미한다)</p>
+            <strong>&lt;td&gt;</strong> 요소는<strong> 테이블의 데이터</strong>를 담는 곳이다.<br>
+            <br>
+            <strong>&lt;td&gt;</strong> 요소는 <strong>텍스트</strong>, <strong>이 미지</strong>,
+            <strong>목록</strong>, <strong>다른 테이블</strong> 등과 같은 <strong>HTML
+              요소의 모든 종류</strong>를 포함 할 수 있습니다.
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><strong>&lt;td&gt;</strong> 요소는<strong> 테이블의 데이터</strong>를
+                    담는 곳이다.<br>
+                    <strong>&lt;td&gt;</strong> 요소는 <strong>텍스트</strong>, <strong>이
+                      미지</strong>, <strong>목록</strong>, <strong>다른 테이블</strong>
+                    등과 같은 <strong>HTML 요소의 모든 종류</strong>를 포함 할 수 있습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>An HTML Table with a Border Attribute</h2>
+            <p> <span style="color: rgb(64, 64, 64); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 16.899999618530273px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">border
+                스타일을 지정하지 않을 경우, 테이블은 <strong>테두리 없이 표시</strong>됩니다.</span> </p>
+            <p>테두리는 <strong>border </strong>속성을 사용하여 추가할 수 있다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">table</span> <span class="highATT">border=</span><span
+
+                  class="highVAL">"1"</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"width:100%"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Jill<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Smith<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>50<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Eve<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Jackson<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>94<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/table</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border_attribute"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp;border 속성은 HTML 표준에서 빠지고 있는 추세이며,&nbsp; <strong>CSS</strong>를 사용하는 것이 바람직하다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>테두리(borders)를 추가하기위해서, <strong>CSS border</strong> property를
+              사용한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">table,
+                  th, td </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  1px solid black;</span><br>
+                }</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p><strong>table </strong>과<strong> table cells </strong>모두에<strong>
+                borders 속성</strong>을 정의해야하는 것을 기억하시오.</p>
+            <hr>
+            <h2>HTML Table<span style="font-family: Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif;">
+                의 </span>접힌 테두리(Collapsed Borders)&nbsp;</h2>
+            <p>테이블 테두리 와 표 셀 테두리가 <strong>하나의 테두리로 </strong>접고 싶을 경우, <strong>CSS
+                </strong>에 <strong>border-collapse</strong>를 추가합니다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">table,
+                  th, td </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  1px solid black;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-collapse:</span><span
+
+                  class="highVAL"> collapse;</span><br>
+                }</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_collapse"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>HTML Table 의 셀패딩(Cell Padding)</h2>
+            <p>셀 패딩(cell padding)은 셍 내용과 그 테두리 사이의 공간을 명시합니다.</p>
+            <p>padding을 지정하지 않을 경우, 테이블 셀은 패딩 없이 표시됩니다.</p>
+            <p><strong>패딩</strong>을 갖는 테이블을 표시하려면, CSS에 <strong>padding을 사용</strong>합니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">table,
+                  th, td </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  1px solid black;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-collapse:</span><span
+
+                  class="highVAL"> collapse;</span><br>
+                }<br>
+                <span class="highELE">th, td </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">padding:</span><span class="highVAL">
+                  15px;</span><br>
+                }</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_cellpadding"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>HTML Table 제목(Headings)</h2>
+            <p>테이블 제목은 <strong>&lt;th&gt; </strong>태그로 정의됩니다.</p>
+            <p>기본 값으로, 브라우저는 제목을 <strong>굵은글씨</strong>로 <strong>중앙정렬</strong>되게 표시합니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">table</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"width:100%"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Firstname<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Lastname<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Points<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Eve<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Jackson<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>94<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/table</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_headings"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p>제목을<strong> 왼쪽 정렬</strong>시키기 위해서는<strong> CSS (text-align)를 사용</strong>한다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">th
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> left;</span><br>
+                } </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_headings_left"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>HTML Table 의 테두리간격(Border Spacing)</h2>
+            <p>테두리 간격(border spacing)은 셀 들간의 간격을 명시한다.</p>
+            <p><strong>테두리 간격</strong>을 갖는 표를 표시하기 위해서는 CSS&nbsp; border-spacing
+              성질을 사용한다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">table
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-spacing:</span><span
+
+                  class="highVAL"> 5px;</span><br>
+                }</div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_cellspacing"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp;테이블이 접은 테두리(collapsed border)를 가지면,&nbsp;
+                    border-spacing 은 효과가 없다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>여러 열(Columns)로 확장된 Table Cells</h2>
+            <p>셀을 하나 이상의 열로 확장하려면,&nbsp; <strong>colspan</strong> 속성을 사용한다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">table</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"width:100%"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Name<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span>
+                <span class="highATT">colspan=</span><span class="highVAL">"2"</span><span
+
+                  class="highGT">&gt;</span>Telephone<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Bill Gates<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>555 77 854<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>555 77 855<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/table</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colspan"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>여러 행(Rows)으로 확장된 Table Cells </h2>
+            <p>셀을 하나 이상의 행으로 확장하려면, <strong>rowspan</strong> 속성을 사용한다.&nbsp; :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">table</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"width:100%"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Name:<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Bill Gates<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span>
+                <span class="highATT">rowspan=</span><span class="highVAL">"2"</span><span
+
+                  class="highGT">&gt;</span>Telephone:<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>555 77 854<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>555 77 855<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/table</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_rowspan"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>HTML Table 켑션(Caption)</h2>
+            <p>테이블에 켑션을 추가하는데,&nbsp;<strong>&lt;caption&gt;</strong> 태그를 사용한다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">table</span> <span class="highATT">style=</span><span
+
+                  class="highVAL">"width:100%"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">caption</span><span
+
+                  class="highGT">&gt;</span>Monthly savings<span class="highLT">&lt;</span><span
+
+                  class="highELE">/caption</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Month<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Savings<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>January<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>$100<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>February<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>$50<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/table</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_tables2"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <p> </p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"> <img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp; &lt;caption&gt; 태그는&lt;table&gt; 태그 바로 다음에 삽입해야 한다.
+                    . </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+            <h2>다른 Tables에 다른 Styles </h2>
+            <p>위의 예들의 대부분은 각 테이블의 폭을 정의하는데 style 속성(width="100%")을 사용하였다.&nbsp;</p>
+            <p>다른 테이블에 다른 폭을 정의 하는 것이 쉽게 이루어진다. </p>
+            <p>&lt;head&gt; 섹션의 style 요소는 페이지의 모든 테이블에 대한 스타일을
+              정의한다.&nbsp;&nbsp;&nbsp; </p>
+            <p>특별한 테이블에 특별한 스타일을 정의 하려면, 테이블에 <strong>id attribute</strong> 을
+              추가한다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">table</span> <span class="highATT">id=</span><span
+
+                  class="highVAL">"t01"</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Firstname<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Lastname<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">th</span><span
+
+                  class="highGT">&gt;</span>Points<span class="highLT">&lt;</span><span
+
+                  class="highELE">/th</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Eve<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>Jackson<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highLT">&lt;</span><span class="highELE">td</span><span
+
+                  class="highGT">&gt;</span>94<span class="highLT">&lt;</span><span
+
+                  class="highELE">/td</span><span class="highGT">&gt;</span><br>
+                &nbsp; <span class="highLT">&lt;</span><span class="highELE">/tr</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/table</span><span
+
+                  class="highGT">&gt;</span> </div>
+            </div>
+            <div class="w3-example">
+              <h3>Now you can define a special style for this table:</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">table#t01
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">width:</span><span class="highVAL">
+                  100%;</span> <br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> #f1f1c1;</span><br>
+                } </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_id1"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <div class="w3-example">
+              <h3>And add more styles:</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">table#t01
+                  tr:nth-child(even) </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> #eee;</span><br>
+                }<br>
+                <span class="highELE">table#t01 tr:nth-child(odd) </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> #fff;</span><br>
+                }<br>
+                <span class="highELE">table#t01 th </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  white;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> black;</span><br>
+                } </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_id2"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>Chapter Summary</h2>
+            <ul>
+              <li>Use the HTML <strong>&lt;table&gt;</strong> element to define
+                a table</li>
+              <li>Use the HTML <strong>&lt;tr&gt;</strong> element to define a
+                table row</li>
+              <li>Use the HTML <strong>&lt;td&gt;</strong> element to define a
+                table data</li>
+              <li>Use the HTML <strong>&lt;th&gt;</strong> element to define a
+                table heading</li>
+              <li>Use the HTML <strong>&lt;caption&gt;</strong> element to
+                define a table caption</li>
+              <li>Use the CSS <strong>border</strong> property to define a
+                border</li>
+              <li>Use the CSS <strong>border-collapse</strong> property to
+                collapse cell borders</li>
+              <li>Use the CSS <strong>padding</strong> property to add padding
+                to cells</li>
+              <li>Use the CSS <strong>text-align</strong> property to align
+                cell text</li>
+              <li>Use the CSS <strong>border-spacing</strong> property to set
+                the spacing between cells</li>
+              <li>Use the <strong>colspan</strong> attribute to make a cell
+                span many columns</li>
+              <li>Use the <strong>rowspan</strong> attribute to make a cell
+                span many rows</li>
+              <li>Use the <strong>id</strong> attribute to uniquely define one
+                table</li>
+            </ul>
+            <hr>
+            <h2>Test Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables3"
+
+                target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables4"
+
+                target="_blank">Exercise 4 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables5"
+
+                target="_blank">Exercise 5 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/html/exercise.asp?filename=exercise_html_tables6"
+
+                target="_blank">Exercise 6 »</a> </p>
+            <hr>
+            <h2>HTML Table Tags</h2>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th>Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_table.asp">&lt;table&gt;</a></td>
+                  <td>Defines a <strong>table</strong></td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_th.asp">&lt;th&gt;</a></td>
+                  <td>Defines a <strong>header cell </strong>in a table</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_tr.asp">&lt;tr&gt;</a></td>
+                  <td>Defines a <strong>row</strong> in a table</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_td.asp">&lt;td&gt;</a></td>
+                  <td>Defines a <strong>cell </strong>in a table</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_caption.asp">&lt;caption&gt;</a></td>
+                  <td>Defines a table <strong>caption</strong></td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_colgroup.asp">&lt;colgroup&gt;</a></td>
+                  <td>Specifies a group of one or more columns in a table for
+                    formatting</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_col.asp">&lt;col&gt;</a></td>
+                  <td>Specifies column properties for each column within a
+                    &lt;colgroup&gt; element</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_thead.asp">&lt;thead&gt;</a></td>
+                  <td>Groups the header content in a table</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_tbody.asp">&lt;tbody&gt;</a></td>
+                  <td>Groups the body content in a table</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/tags/tag_tfoot.asp">&lt;tfoot&gt;</a></td>
+                  <td>Groups the footer content in a table </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div class="chapter">
+             <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Images.html">«
+                    Previous</a> <a class="w3-right w3-btn" href="HTML%20Lists.html">Next
+                    Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"><title>HTML5 Canvas</title>
+
+<style>a.menu_html5_canvas{font-weight:bold;}</style>
+<meta name="viewport" content="width=device-width">
+<meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+<meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3855518-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script>
+<!--
+function searchfield_focus(obj)
+{
+obj.style.color=""
+obj.style.fontStyle=""
+if (obj.value=="Search w3schools.com")
+{obj.value=""}
+}
+var addr=document.location.href;
+function displayError()
+{
+document.getElementById("err_url").value=addr;
+document.getElementById("err_form").style.display="block";
+document.getElementById("err_desc").focus();
+hideSent();
+}
+function hideError()
+{
+document.getElementById("err_form").style.display="none";
+}
+function hideSent()
+{
+document.getElementById("err_sent").style.display="none";
+}
+function sendErr()
+{
+var xmlhttp;
+var err_url=document.getElementById("err_url").value;
+var err_email=document.getElementById("err_email").value;
+var err_desc=document.getElementById("err_desc").value;
+if (window.XMLHttpRequest)
+{// code for IE7+, Firefox, Chrome, Opera, Safari
+xmlhttp=new XMLHttpRequest();
+}
+else
+{// code for IE6, IE5
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.open("POST","/err_sup.asp",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+document.getElementById("err_desc").value="";
+hideError();
+document.getElementById("err_sent").style.display="block";
+}
+//-->
+</script>
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16833175/BottomMediumRectangle', [300, 250], 'div-gpt-ad-1383210480969-0').addService(googletag.pubads());
+googletag.defineSlot('/16833175/LargePS', [[723, 280], [723, 400]], 'div-gpt-ad-1383210480969-1').addService(googletag.pubads());
+googletag.defineSlot('/16833175/MainLeaderboard', [728, 90], 'div-gpt-ad-1383210480969-2').addService(googletag.pubads());
+googletag.defineSlot('/16833175/SmallPS', [723, 170], 'div-gpt-ad-1383210480969-3').addService(googletag.pubads());
+googletag.defineSlot('/16833175/WideSkyScraper', [160, 600], 'div-gpt-ad-1383210480969-4').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","html");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<script>
+(function() {
+var cx = '012971019331610648934:m2tou3_miwy';
+var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+</head>
+
+  <body>
+<div id="belowTopnav">
+<div id="page">
+<div><br>
+<div id="main">
+<h1>HTML5 <span class="color_h1"><strong>캔버스</strong>(Canvas)</span></h1>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="html5%20form%20attributes.html">« Previous</a></div>
+<div class="next"><a class="chapter" href="html5%20Inline%20svg.html">Next Chapter »</a></div>
+</div>
+<hr>
+<div> <canvas id="myCanvas" width="270" height="160" style="border: 1px solid rgb(195, 195, 195); float: left; margin-right: 20px; margin-bottom: 15px;">Your
+browser does not support the &lt;canvas&gt; element. </canvas>
+<p class="intro">&lt;canvas&gt; 요소는 웹 페이지에 실시간으로
+그래픽을 그리는 데 사용됩니다.</p>
+<p class="intro">왼쪽의 예는 캔버스에 그려진 빨간 사각형, 그라데이션(gradient)
+사각형, 여러 가지 빛깔의 사각형, 및 여러 가지 빛깔의 텍스트를 보여줍니다.</p>
+</div>
+<script>
+var c=document.getElementById("myCanvas");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+{
+var ctx=c.getContext("2d");
+ctx.fillStyle="#FF0000";
+ctx.fillRect(20,20,100,50);
+var grd=ctx.createLinearGradient(140,20,240,70);
+grd.addColorStop(0,"black");
+grd.addColorStop(1,"white");
+ctx.fillStyle=grd;
+ctx.fillRect(140,20,100,50);
+var grd2=ctx.createLinearGradient(20,90,120,90);
+grd2.addColorStop(0,"black");
+grd2.addColorStop("0.3","magenta");
+grd2.addColorStop("0.5","blue");
+grd2.addColorStop("0.6","green");
+grd2.addColorStop("0.8","yellow");
+grd2.addColorStop(1,"red");
+ctx.fillStyle=grd2;
+ctx.fillRect(20,90,100,50);
+ctx.font="30px Verdana";
+var grd3=ctx.createLinearGradient(140,20,240,90);
+grd3.addColorStop(0,"black");
+grd3.addColorStop("0.3","magenta");
+grd3.addColorStop("0.6","blue");
+grd3.addColorStop("0.8","green");
+grd3.addColorStop(1,"red");
+ctx.strokeStyle=grd3;
+ctx.strokeText("Smile!",140,120); }
+</script><br>
+<hr>
+<h2>What is Canvas?</h2>
+<p> HTML5 &lt;canvas&gt; 요소는 스크립트(보통 JavaScript)를 통해 즉석에서
+그래픽을 그리는 데 사용됩니다.</p>
+<p>The &lt;canvas&gt; 요소는 단지 그래픽을 위한 컨테이너입니다. 실제로 그래픽을
+그리는데는 스크립트를 사용해야 합니다.</p>
+<p>캔버스에는 경로, 상자, 원, 텍스트 그리기 및 이미지 추가를 위한 여러 가지 방법이 있습니다.</p>
+<hr>
+<h2>Create a Canvas</h2>
+<p> canvas 는 HTML 페이지에서 사각형 영역이며 HTML page,
+&lt;canvas&gt; 요소로 정의된다.</p>
+<p><b>Note:</b>&lt;canvas&gt; 는 기본적으로
+&nbsp;테두리와 내용이 없습니다.</p>
+<p> 태그는 다음과 같다:</p>
+<div class="code notranslate">
+<div> &lt;canvas id="myCanvas" width="200"
+height="100"&gt;&lt;/canvas&gt; </div>
+</div>
+<p><b>Note:</b> 캔버스의 크기를 정의하기 위해서 항상 id 속성과 폭과 높이
+속성을(스크립트에서 언급되는) 지정합니다 .</p>
+<p><b>Tip:</b> 하나의 HTML 페이지에 여러
+&lt;canvas&gt;를 요소를 포함 할 수 있습니다.</p>
+<p>테두리를 추가하려면, 스타일 속성을 사용:</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<div class="example_code notranslate"> &lt;canvas
+id="myCanvas" width="200" height="100"<br>
+style="border:1px solid #000000;"&gt;<br>
+&lt;/canvas&gt; </div>
+<br>
+<a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_empty" class="tryitbtn">Try it yourself »</a> </div>
+<br>
+<hr>
+<h2> JavaScript로 캔버스에 그리기 </h2>
+<p>모든 캔버스에 그리기는 자바 스크립트 안에서 수행해야 합니다&nbsp;:</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<div class="example_code notranslate">
+&lt;script&gt;<br>
+var c = document.getElementById("myCanvas");<br>
+var ctx = c.getContext("2d");<br>
+ctx.fillStyle = "#FF0000";<br>
+ctx.fillRect(0,0,150,75);<br>
+&lt;/script&gt; </div>
+<br>
+<a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_first" class="tryitbtn">Try it yourself »</a> </div>
+<p><b>Example explained:</b></p>
+<p>먼저, &lt;canvas&gt; 요소를 찾습니다:</p>
+<div class="code notranslate">
+<div> var c = document.getElementById("myCanvas"); </div>
+</div>
+<p>그런 다음, getContext () 메소드를 호출합니다.( getContext() 메소드에 문자열 "2d"를
+전달해야 합니다):</p>
+<div class="code notranslate">
+<div> var ctx = c.getContext("2d"); </div>
+</div>
+<p> getContext("2d") 객체는 내장된 HTML5 객체로써, 경로, 상자, 원, 텍스트, 이미지 등을
+그리기 위한 많은 속성과 방법을 갖습니다:</p>
+<div class="code notranslate">
+<div> ctx.fillStyle = "#FF0000";<br>
+ctx.fillRect(0,0,150,75); </div>
+</div>
+<p> fillStyle property 는 CSS 색상, 그라데이션 또는 패턴이 될 수 있으며, 기본
+fillStyle 은 #000000 (블랙) 입니다.</p>
+<p> fillRect(<i>x,y,width,height</i>) 메서드는 현재 fill
+style 으로 사각형을 그립니다.</p>
+<hr>
+<h2><strong>캔버스 좌표</strong></h2>
+<p>캔버스는 2 차원 격자입니다.</p>
+<p>캔버스의 왼쪽-위 모서리가 (0, 0) 좌표입니다.</p>
+<p>그래서, 위의 fillRect() 메소드는 매개 변수 (0,0,150,75)는 왼쪽-위 모서리 (0, 0)에서
+시작하고 150x75 픽셀의 사각형을 그림을 의미합니다.</p>
+<p><b>Coordinates Example</b></p>
+<p>마우스는 아래의 사각형에 위치하면 x 및 y 좌표를 볼 수 있습니다:</p>
+<div>
+<div style="width: 230px; height: 20px; text-align: center; clear: both;">X</div>
+<div style="width: 20px; padding-top: 40px; float: left;">Y</div>
+<div style="width: 402px; float: left;"><iframe src="http://www.w3schools.com/html/tryhtml5_canvas_coordinates.htm" style="border: 0pt none ; overflow: hidden; width: 400px; height: 120px;" frameborder="0"></iframe></div>
+</div>
+<hr>
+<h2><strong>캔버스 - 경로</strong></h2>
+<p>캔버스에 직선을 그리려면, 다음과 같은 두 가지 방법을 사용합니다 :</p>
+<ul>
+<li>moveTo(<i>x,y</i>) : 라인의 시작점을 정의</li>
+<li>lineTo(<i>x,y</i>) : 라인의 종료점을 정의</li>
+</ul>
+<p>실제로 선을 그리려면, stroke() 과 같은 "ink" 메소드 중 하나를 사용해야 합니다</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<p>위치(0, 0)에 시작 지점을 위치(200,100)에 끝 지점을 정의합니다. &nbsp;그리고,
+stroke() 메서드를 사용하여 실제로 선을 그립니다:</p>
+<canvas id="myCanvas2" width="200" height="100" style="border: 1px solid rgb(211, 211, 211); background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+Your browser does not support the HTML5 canvas tag. </canvas>
+<script>
+var c=document.getElementById("myCanvas2");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+{
+var ctx=c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+}
+</script>
+<p>JavaScript:</p>
+<div class="example_code notranslate"> var c =
+document.getElementById("myCanvas");<br>
+var ctx = c.getContext("2d");<br>
+ctx.moveTo(0,0);<br>
+ctx.lineTo(200,100);<br>
+ctx.stroke();</div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_path" target="_blank">Try it yourself »</a> </div>
+<p>캔버스에 원을 그리려면, 우리는 다음과 같은 메소드를 사용합니다&nbsp;:</p>
+<ul>
+<li>arc(x,y,r,start,stop)</li>
+</ul>
+<p>실제로 원을 그리려면, stroke() 나 fill() 같은 "ink" methods를 사용합니다.</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<p>Create a circle with the arc() method:</p>
+<canvas id="myCanvas3" width="200" height="100" style="border: 1px solid rgb(211, 211, 211); background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+Your browser does not support the HTML5 canvas tag. </canvas>
+<script>
+var c=document.getElementById("myCanvas3");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+{
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+}
+</script>
+<p>JavaScript:</p>
+<div class="example_code notranslate"> var c =
+document.getElementById("myCanvas");<br>
+var ctx = c.getContext("2d");<br>
+ctx.beginPath();<br>
+ctx.arc(95,50,40,0,2*Math.PI);<br>
+ctx.stroke();</div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_path2" target="_blank">Try it yourself »</a> </div>
+<br>
+<hr>
+<h2>Canvas - Text</h2>
+<p>캔버스에 텍스트를 그리려면 가장 중요한 property성 및 methods은 다음과 같습니다 :</p>
+<ul>
+<li>font - 텍스트의 font properties 을 정의 </li>
+<li>fillText(<i>text,x,y</i>) - 캔버스에 "채워진(filled)"
+텍스트를 그립니다</li>
+<li>strokeText(<i>text,x,y</i>) - 캔버스에 텍스트를 그립니다
+(채우기 없음)</li>
+</ul>
+<p> fillText() 사용:</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<p>Write a 30px high filled text on the canvas, using the font
+"Arial":</p>
+<canvas id="myCanvas4" width="200" height="100" style="border: 1px solid rgb(211, 211, 211); background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+Your browser does not support the HTML5 canvas tag. </canvas>
+<script>
+var c=document.getElementById("myCanvas4");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+{
+var ctx=c.getContext("2d");
+ctx.font="30px Arial";
+ctx.fillText("Hello World",10,50);
+}
+</script>
+<p>JavaScript:</p>
+<div class="example_code notranslate"> var c =
+document.getElementById("myCanvas");<br>
+var ctx = c.getContext("2d");<br>
+ctx.font = "30px Arial";<br>
+ctx.fillText("Hello World",10,50);</div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_text" target="_blank">Try it yourself »</a> </div>
+<p> strokeText() 사용:</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<p>Write a 30px high text (no fill) on the canvas, using the font
+"Arial":</p>
+<canvas id="myCanvas5" width="200" height="100" style="border: 1px solid rgb(211, 211, 211); background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+Your browser does not support the HTML5 canvas tag. </canvas>
+<script>
+var c=document.getElementById("myCanvas5");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+{
+var ctx=c.getContext("2d");
+ctx.font="30px Arial";
+ctx.strokeText("Hello World",10,50);
+}
+</script>
+<p>JavaScript:</p>
+<div class="example_code notranslate"> var c =
+document.getElementById("myCanvas");<br>
+var ctx = c.getContext("2d");<br>
+ctx.font = "30px Arial";<br>
+ctx.strokeText("Hello World",10,50);</div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_text2" target="_blank">Try it yourself »</a> </div>
+<br>
+<hr>
+<h2>Canvas - Gradients</h2>
+<p>Gradients 캔버스에 사각형, 원, 선, 텍스트 등을 채우기 위해 사용될 수있다. 캔버스에 도형은 단색에
+한정되지 않는다.</p>
+<p>그라디언트의 두 가지 종류가 있습니다:</p>
+<ul>
+<li>createLinearGradient(<i>x,y,x1,y1</i>) - 선형
+그라데이션을 만듭니다</li>
+<li>createRadialGradient(<i>x,y,r,x1,y1,r1</i>) -
+방사형 / 원형의 그라데이션을 만듭니다</li>
+</ul>
+<p>그라데이션 객체에는 두 개 이상의 색상 멈춤 점을 추가해야합니다.</p>
+<p> addColorStop() 메소드는 색상 정지 및 그라데이션을 따라 위치를 지정합니다. 그라데이션 위치는 0
+에서 1 사이의 어디에나 있을 수 있습니다. </p>
+<p>그라데이션을 사용하려면, 그라데이션 fillStyle 또는 strokeStyle property 정하고,
+사각형, 텍스트 또는 라인과 같은 모양을 그립니다.</p>
+<p> createLinearGradient() 사용하기:</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<p>Create a linear gradient. Fill rectangle with the gradient:</p>
+<canvas id="myCanvas6" width="200" height="100" style="border: 1px solid rgb(211, 211, 211); background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+Your browser does not support the HTML5 canvas tag. </canvas>
+<script>
+var c=document.getElementById("myCanvas6");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+{
+var ctx=c.getContext("2d");
+var grd=ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);
+}
+</script>
+<p>JavaScript:</p>
+<div class="example_code notranslate"> var c =
+document.getElementById("myCanvas");<br>
+var ctx = c.getContext("2d");<br>
+<br>
+// Create gradient<br>
+var grd = ctx.createLinearGradient(0,0,200,0);<br>
+grd.addColorStop(0,"red");<br>
+grd.addColorStop(1,"white");<br>
+<br>
+// Fill with gradient<br>
+ctx.fillStyle = grd;<br>
+ctx.fillRect(10,10,150,80);</div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_grad" target="_blank">Try it yourself »</a> </div>
+<p> createRadialGradient() 사용하기:</p>
+<div class="example">
+<h2 class="example">Example</h2>
+<p>Create a radial/circular gradient. Fill rectangle with the
+gradient:</p>
+<canvas id="myCanvas7" width="200" height="100" style="border: 1px solid rgb(211, 211, 211); background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+Your browser does not support the HTML5 canvas tag. </canvas>
+<script>
+var c=document.getElementById("myCanvas7");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+{
+var ctx=c.getContext("2d");
+// Create gradient
+var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);
+}
+</script>
+<p>JavaScript:</p>
+<div class="example_code notranslate"> var c =
+document.getElementById("myCanvas");<br>
+var ctx = c.getContext("2d");<br>
+<br>
+// Create gradient<br>
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);<br>
+grd.addColorStop(0,"red");<br>
+grd.addColorStop(1,"white");<br>
+<br>
+// Fill with gradient<br>
+ctx.fillStyle = grd;<br>
+ctx.fillRect(10,10,150,80);</div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_grad2" target="_blank">Try it yourself »</a> </div>
+<br>
+<hr>
+<h2>Canvas - Images</h2>
+<p>캔버스에 이미지를 그리려면, 우리는 다음과 같은 method를 사용합니다&nbsp;:</p>
+<ul>
+<li>drawImage(<i>image,x,y</i>)</li>
+</ul>
+<div class="example">
+<h2 class="example">Image to use:</h2>
+<p><img id="scream" src="http://www.w3schools.com/html/img_the_scream.jpg" alt="The Scream"></p>
+<h2 class="example">Example</h2>
+<p>Draw the image onto the canvas:</p>
+<canvas id="myCanvas8" width="250" height="300" style="border: 1px solid rgb(211, 211, 211); background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+Your browser does not support the HTML5 canvas tag. </canvas>
+<script>
+var c=document.getElementById("myCanvas8");
+var canvOK=1;
+try {c.getContext("2d");}
+catch (er) {canvOK=0;}
+if (canvOK==1)
+{
+var ctx=c.getContext("2d");
+var img=document.getElementById("scream");
+ctx.drawImage(img,10,10);
+}
+</script>
+<p>JavaScript:</p>
+<div class="example_code notranslate"> var c =
+document.getElementById("myCanvas");<br>
+var ctx = c.getContext("2d");<br>
+var img = document.getElementById("scream");<br>
+ctx.drawImage(img,10,10);</div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_img" target="_blank">Try it yourself »</a> </div>
+<br>
+<hr>
+<h2>HTML Canvas Reference</h2>
+<p>캔버스 객체(Canvas object)와 함께 사용할 수있는 모든 속성과 메소드의 완전한 참고는
+==&gt; <a href="http://www.w3schools.com/tags/ref_canvas.asp">Canvas
+Reference.</a></p>
+<h2>The HTML &lt;canvas&gt; Tag</h2>
+<table class="reference notranslate">
+<tbody>
+<tr>
+<th style="width: 150px;">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="http://www.w3schools.com/tags/tag_canvas.asp">&lt;canvas&gt;</a></td>
+<td>Used to draw graphics, on the fly, via scripting
+(usually JavaScript)</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="html5%20form%20attributes.html">« Previous</a></div>
+<div class="next"><a class="chapter" href="html5%20Inline%20svg.html">Next Chapter »</a></div>
+</div>
+<hr> </div>
+</div>
+</div>
+<br>
+</div>
+<br>
+<hr style="height: 5px;">
+</body></html>
