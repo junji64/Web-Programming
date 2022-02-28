@@ -2,4 +2,4 @@
 
 ## HTML
 
-* [Introduction](./HTML/HTML%20intro.html)
+* [Introduction](https://junji64.github.io/Web-Programming/HTML/HTML%20intro.html)
