@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Elements</title>
+    <style>a.menu_html_elements{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto;margin-right:10px; padding:30px">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>HTML <span class="color_h1"><strong>요소</strong>(Elements)</span></h1>
+            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Basic.html">«
+                Previous</a> <a class="w3-right w3-btn" href="HTML%20Attributes.html">Next
+                Chapter »</a> </div>
+            <hr>
+            <p class="intro">HTML 문서는 HTML 요소(elemments)들로 만들어진다.</p>
+            <hr>
+            <h2>HTML <strong>요소</strong>(Elements)</h2>
+            <p><strong>HTML 요소</strong>는 <strong>시작태그</strong>와<strong> 종료태그, </strong>그리고 그 사이의 <strong>내용(content)</strong>으로 구성된다.</p>
+            <div class="htmlHigh" style="font-size:20px;padding:10px;margin-bottom:10px;">
+              <span style="color:#98bf21"><span class="highLT">&lt;</span><span
+
+                  class="highELE">tagname</span><span class="highGT">&gt;</span></span>content<span
+
+                style="color:#98bf21"><span class="highLT">&lt;</span><span class="highELE">/tagname</span><span
+
+                  class="highGT">&gt;</span></span> </div>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:33%">Start tag</th>
+                  <th style="width:33%">Element content</th>
+                  <th>End tag</th>
+                </tr>
+                <tr>
+                  <td>&lt;h1&gt;</td>
+                  <td>My First Heading</td>
+                  <td>&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;p&gt;</td>
+                  <td>My first paragraph.</td>
+                  <td>&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;br&gt;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><b>*</b> 시작 태그는 종종 <strong>여는(opening) 태그</strong>, 종료 태그는 <strong>닫는(closing) 태그</strong>라 불린다.<b> </b><br>
+              * 어떤 HTML 요소는 종료(ending)태그를 갖지 않는다.<b><br>
+              </b></p>
+            <hr>
+            <h2><strong>중첩된</strong> HTML <strong>요소</strong></h2>
+            <p>대부분의 HTML 요소는 중첩될 수 있다 (다른 HTML 요소를 포함할 수 있다).</p>
+            <p>다음의 HTML 문서는 중첩된 4개의 HTML 요소들로 구성된다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">h1</span><span
+
+                  class="highGT">&gt;</span>My First Heading<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h1</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>My first paragraph.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements"
+
+                target="_blank">Try it yourself »</a> </div>
+            <hr>
+
+
+<h3>Example <strong>설명</strong></h3>
+
+            <p><b><code class="w3-codespan">&lt;html&gt;</code> 요소 </b>는 전체 HTML 문서를 정의한다.<br>
+              시작 태그 &lt;html&gt; 과 종료 태그 &lt;/html&gt;를 갖으며,<br>
+              요소의 내용은 또 다른 HTML 요소(<code class="w3-codespan">&lt;body&gt;</code> 요소) 이다.</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>
+ &lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div></div>
+
+<p><b><code class="w3-codespan">&lt;body&gt;</code> 요소 </b>는 HTML 문서의 본문을 정의한다.<br>
+              요소는 시작 태그 &lt;body&gt; 와 종료 태그 &lt;/body&gt;를 갖으며, <br>
+              요소의 내용은 두개의 다른 HTML 요소( <code class="w3-codespan">&lt;h1&gt;</code> 과 <code class="w3-codespan"> &lt;p&gt;</code>) 이다.</p>
+
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;body&gt;<br><br>
+ &lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;
+</div></div>
+
+<p><b><code class="w3-codespan">&lt;h1&gt;</code> 요소</b>는 제목(heading)을 정의한다.<br>
+              요소는 시작 태그 &lt;h1&gt; 와 종료 태그 &lt;/h1&gt;를 갖으며, <br>
+              요소의 내용은 "My First Heading" 이다</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+</div>
+</div>
+ <b><code class="w3-codespan">&lt;p&gt;</code> 요소 </b>는 HTML 문서의 단락(paragraph)를 정의한다.<br>
+            요소는 시작 태그 &lt;p&gt; 와 종료 태그 &lt;/p&gt;를 갖으며, <br>
+            요소의 내용은 "This is my first paragraph." 이다<br>
+
+            <div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;p&gt;This is my first paragraph.&lt;/p&gt;</div>
+</div>
+
+            <hr>
+            <h2><strong>종료 태그(End tag)를 잊지 마세요</strong></h2>
+            <p>일부 HTML 요소는 종료 태그를 잊은 경우에도 제대로 표시될 수 있습니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">html</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>This is a paragraph<br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>This is a paragraph<br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span></div>
+              <a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_no_endtag"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            대부분의 브라우져에서, 종료 태그는 선택사항으로 간주되기 때문에, 위의 예는 잘 작동됩니다.
+            <p>하지만, 이것에 의존하지 마십시오. 종료 태그를 잊은 경우 대부분의 HTML 요소는 예기치 않은 결과/오류를
+              발생시킵니다.</p>
+            <hr>
+            <h2><strong>빈</strong>(Empty) HTML <strong>요소</strong></h2>
+            <p>내용이 없는 HTML 요소는 <strong>빈</strong> 요소라고 합니다.</p>
+            <p>&lt;br&gt; 은 종료 태그가 없는 빈 요소(&lt;br&gt; 태그는 줄 바꿈을 정의)입니다.</p>
+            <p>빈 요소들은 시작태그에서 다음과 같이 닫을 수도 있습니다: <strong>&lt;br /&gt;</strong></p>
+            <p>HTML5 는 빈 요소가 닫혀질 것을 요구하지는 않습니다. </p>
+            <hr>
+            <h2>HTML Tip: <strong>소문자 태그를 사용을 권장합니다.</strong></h2>
+            <p>HTML 태그는 대소문자를 구분하지 않습니다: &lt;P&gt; 는 &lt;p&gt;와 같은 것을 의미한다. 많은  웹사이트는 대문자 HTML 태그를 사용한다.</p>
+            <p>World Wide Web Consortium (W3C)는<b> </b><b>HTML 5</b>에서 소문자를
+                요구하지는 않지만, XHTML에서는 소문자가 <strong>요구</strong>되므로 W3Schools 는 소문자를 사용합니다.</p>
+            <br>
+            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Basic.html">«
+                Previous</a> <a class="w3-right w3-btn" href="HTML%20Attributes.html">Next
+                Chapter »</a> </div>
+            <hr>
+
+  </body>
+</html>

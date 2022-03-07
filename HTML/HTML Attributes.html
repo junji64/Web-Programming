@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HTML Attributes</title>
+    <style>a.menu_html_attributes{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>HTML <span class="color_h1"><strong>속성</strong>(Attributes)</span></h1>
+            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Elements.html">«
+                Previous</a> <a class="w3-right w3-btn" href="HTML%20Headings.html">Next
+                Chapter »</a> </div>
+            <hr>
+            <p class="intro">속성은 HTML 요소에 추가 정보를 제공합니다.</p>
+            <hr>
+            <h2>HTML 속성</h2>
+            <ul>
+              <li>HTML 요소는 <strong>속성</strong>(<b>attributes)</b><strong>들</strong>을
+                가질 수 있습니다.</li>
+              <li><strong>속성</strong>들은 요소에 대하여 <b>추가적인 정보</b>를 제공합니다<b>. <br>
+                </b></li>
+              <li><strong>속성</strong>들은 항상 <strong>시작 태그</strong>에 명시됩니다.</li>
+              <li><strong>속성</strong>들은 <strong>이름(name)/값(value) 쌍</strong>으로
+                주어집니다 : <b>name="value"</b></li>
+            </ul>
+            <hr>
+            <h2>lang 속성</h2>
+            <p>문서의 언어는 &lt;html&gt; 태그 안에 선언될 수 있으며, lang 속성으로 선언된다. </p>
+            <p>언어의 선언은 응용프로그램과 검색엔진의 접근성에 중요한다:</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">html</span>
+                <span class="highATT">lang=</span><span class="highVAL">"en-US"</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">h1</span><span
+
+                  class="highGT">&gt;</span>My First Heading<span class="highLT">&lt;</span><span
+
+                  class="highELE">/h1</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>My first paragraph.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span> </div>
+            </div>
+            첫 두 문자(en)는 언어를 명시하며, 방언이 있다면, 두 문자(US)를 추가한다.&nbsp; <br>
+            <hr>
+            <h2>title 속성</h2>
+            <p>HTML 단락은 &lt;p&gt; 태그로 정의된다. </p>
+            <p>다음의 예에서, &lt;p&gt; 요소가 title 속성을 갖으며, 그 속성의 값은 "About W3Schools"
+              이다.</p>
+            <p>요소의 위로 마우스를 움직이면, title이 툴팁(tooltip)형태로 보여진다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">p</span> <span class="highATT">title=</span><span
+
+                  class="highVAL">"About W3Schools"</span><span class="highGT">&gt;</span><br>
+                W3Schools is a web developer's site.<br>
+                It provides tutorials and references covering<br>
+                many aspects of web programming,<br>
+                including HTML, CSS, JavaScript, XML, SQL, PHP, ASP, etc.<br>
+                <span class="highLT">&lt;</span><span class="highELE">/p</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title"
+
+                target="_blank">Try it Yourself »</a> </div>
+            <hr>
+            <h2>href 속성</h2>
+            <p>HTML 링크는 &lt;a&gt; 태그로 정의 되며, 링크 주소는 <b>href 속성</b>에 지정된다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">a</span> <span class="highATT">href=</span><span
+
+                  class="highVAL">"http://www.w3schools.com"</span><span class="highGT">&gt;</span>This
+                is a link<span class="highLT">&lt;</span><span class="highELE">/a</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_link"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <hr>
+            <h2>size 속성들</h2>
+            <p>HTML 이미지는 &lt;img&gt; 태그로 정의되며, 소스파일 이름(<strong>src</strong>),
+              이미지의 크기(<strong>width </strong>와 <strong>height</strong>) 모두 
+              <strong>속성</strong>으로 제공된다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">img</span> <span class="highATT">src=</span><span
+
+                  class="highVAL">"w3schools.jpg"</span> <span class="highATT">width=</span><span
+
+                  class="highVAL">"104"</span> <span class="highATT">height=</span><span
+
+                  class="highVAL">"142"</span><span class="highGT">&gt;</span> </div>
+              <a class="w3-btn w3-margin-bottom" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_img"
+
+                target="_blank">Try it Yourself »</a> </div>
+            위에서 alt 속성은 HTML요소가 표시될 수 없는 경우에 사용될 대체 텍스트를 명시한다. <br>
+            <hr>
+            <h2>항상 속성 값을 <span style="font-weight: bold;">인용부호</span>로 묶어주세요</h2>
+            <p>속성 값은 항상 인용부호로 묶어주어야 합니다. </p>
+            <p>큰 따옴표(")가 가장 일반적이지만, 작은 따옴표(')가 사용될 수도 있습니다.</p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><b>&nbsp;Tip:</b> 속성 값 자체가 따옴표를 포함하는 경우에는 작은 따옴표의 사용이
+                    필요하기도 합니다: name='John "ShotGun" Nelson'</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2>HTML Tip: 속성에 소문자 사용을 권장합니다. </h2>
+            <p>속성 이름과 값은 대소문자를 구분하지 않습니다.</p>
+            <p>하지만 World Wide Web Consortium (W3C) 는 소문자 속성 이름/속성 값을 HTML 5 에서
+              권장하고 있습니다.</p>
+            <p>XHTML 에서는 소문자 속성이 요구됩니다.</p>
+            <hr>
+            <h2>Test Yourself with Exercises!</h2>
+            <p>
+              <a class="w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1"
+
+                target="_blank">Exercise 1 »</a>
+              <a class="w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes2"
+
+                target="_blank">Exercise 2 »</a>
+              <a class="w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes3"
+
+                target="_blank">Exercise 3 »</a>
+              <a class="w3-btn" href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes4"
+
+                target="_blank">Exercise 4 »</a>
+            </p>
+            <hr>
+            <h2>HTML 속성 Reference</h2>
+            <p>각 HTML 요소에 대한 속성의 전체 목록은 여기를 참조: <a href="http://www.w3schools.com/tags/default.asp">HTML
+                Tag Reference</a>.</p>
+            <p>다음은 모든 HTML 요소에서 사용이 가능한 몇가지 속성의 목록입니다.:</p>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:15%">속성</th>
+                  <th>설명</th>
+                </tr>
+                                <tr>
+                  <td>id</td>
+                  <td>요소에 대한 id를 명시</td>
+                </tr>
+                <tr>
+                  <td>lang</td>
+                  <td>요소에 사용된 언어의 선언 </td>
+                </tr>
+
+                <tr>
+                  <td>style</td>
+                  <td> 요소에 대한 inline CSS style 을 명시 </td>
+                </tr>
+                <tr>
+                  <td>title</td>
+                  <td>요소에 대한 추가 정보를 제공 (tool tip의 형태로 보여짐)</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>For more information about global attributes: <a href="http://www.w3schools.com/tags/ref_standardattributes.asp">HTML
+                Global Attributes Reference</a>.</p>
+            <br>
+            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="HTML%20Elements.html">«
+                Previous</a> <a class="w3-right w3-btn" href="HTML%20Headings.html">Next
+                Chapter »</a> </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
